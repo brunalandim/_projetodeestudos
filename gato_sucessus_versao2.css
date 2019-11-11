@@ -14,7 +14,7 @@ body{
     height: 1200px;
     margin: 5px;
     padding: 40px;
-    background-image: url(../img/gatos_sucessus_fundo.jpg);
+    background-image: url(img/gatos_sucessus_fundo.jpg);
     /*background-color: rgb(6, 6, 59);*/
 }
                 /*cabeçalho principal*/
@@ -178,21 +178,21 @@ td{
                 /*fotos dos depoimentos*/
 }
 #gatinho1{
-    background-image: url(../img/gatinho1.jpg);
+    background-image: url(img/gatinho1.jpg);
     float: left;
     margin:10px;
     transform: translate(49%,-8%);
 }
 
 #gatinho2{
-    background-image: url(../img/gatinho2.jpg);
+    background-image: url(img/gatinho2.jpg);
     float: right;
     margin: 10px;
     transform:translate(-45%);
 }
 
 #gatinho3{
-    background-image: url(../img/gatinho4.jpg);
+    background-image: url(img/gatinho4.jpg);
     margin:10px;
     transform: translate(0,2%);
 }
