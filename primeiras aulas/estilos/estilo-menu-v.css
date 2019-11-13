@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+            /*Menu principal*/
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+            /* itens principais do menu */
+ul li{
+    position: relative;
+    width: 150px;
+    background-color: rgba(95, 95, 207, 0.795);
+    transition-property: background-color, width;
+    transition-duration: 5s, 1s;
+}
+        /*Aqui é a configuração do pseudo-elemento*/
+ul li:hover{
+    width: 160px;
+}
+
+li ul{/*seleciona a UL que está dentro de um item de lista il*/ 
+    display: none;
+    position: absolute;
+    left: 145px; /*levemente menor que os botões principais*/
+    top: 0;
+}
+
+            /*resolver Bugs de interpretação 'gaps' entre os itens (IE e IE MAC) */
+            /*Macetes de aprendizagem*/
+                *html ul li {float: left; }
+                *html ul li a {height: 1%;}
+ul li a {
+    display: block;
+    font: normal small-caps normal 13px/150%  Arial, Helvetica, sans-serif;
+    color: rgba(0, 0, 0, 0.966);
+    background-color: rgb(189, 21, 21);
+    padding: 10px;
+    width: 130px;
+    margin: 2px;
+    text-decoration: none;
+    transition-property: background-color, width;
+    transition-duration: 8s, 2s;
+}
+
+ul li:hover{
+    background-color: blue ;
+}
+        /*Start pra mostrar um *** submenu nível 1 */
+ul.menu li:hover ul.submenu1, ul.submenu1 li:hover ul.submenu2{
+    display: block;
+    z-index: 10;
+    text-transform: uppercase;
+}
+    
+                /*Tratamento de submenu2 - larguras maiores*/
+.submenu2 li {
+    width: 187px;
+}
+
+.submenu2 li a {
+    width: 165px;
+}
+
+ul.submenu2 li:hover {
+    width: 203px;
+}
