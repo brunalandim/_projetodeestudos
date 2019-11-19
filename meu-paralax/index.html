@@ -7,82 +7,12 @@
         <meta name="description"  content="Site de esportes radicais, com ênfase em promoção e marketing esportivo sobre paraquedismo no Brasil e no mundo. Aqui o intermauta conhece o esporte e adquire experiência e muita adrenalina.">
         <meta name="keywords" content="salto de paraquedas, paraquedismo,esporte, radical, radicais, curso, salto duplo">
         <title>Paraquedismo RXP</title>
-        <style>
-        /*parâmetros globais*/
-          body, html{ /*altura do html em 100% permitiria acompanhar*/
-              height: 100%;
-              margin: 0;
-              font: 400 15px/1.8 "Lato", sans-serif;
-              color: #777;
-              scroll-behavior: smooth; /*suavização da rolagem da página*/
-          }  
-
-            /*LEMBRETE 
-            
-            Shorthand de fonte COMPLETO, com a ordem correta (sintaxe):
-            font-style font-variant font-wieght font-size/line-height font-family*/
-
-          html{
-            /*scroll-behavior:smooth*/
-          }
-
-          .bgimagem_1, .bgimagem_2, .bgimagem_3{
-            position: relative; /*respeita os irmãos == relative*/
-            opacity: .8;
-            background-repeat: no-repeat; /*imagens repetem no fundo em x e y*/
-            background-size: cover; /*dá cobertura no fundo pela maior dimensão*/
-            background-position: center; /*centerV centerH*/
-            background-attachment: fixed; /*sem rolagem junto com o objeto*/
-          }
-        
-          .bgimagem_1{
-              background-image: url("imagens/duplo-4.jpg");
-              min-height: 100%;
-          }
-
-          .bgimagem_2{
-              background-image: url("imagens/duplo-12.jpg");
-              min-height: 100%;
-          }
-
-          .bgimagem_1{
-              background-image: url("imagens/paraquedismo03.jpg");
-              min-height: 100%;
-          }
-
-          /*parâmetros dos BOXES de TÍTULOS sobre as imagens*/
-
-          .TitBox{
-              position:absolute;
-              left: 0;
-              top: 50%;
-              width: 100%;
-              text-align: center;
-              color: #000;
-          }
-
-          .TitBox span.border{
-              background-color: #000;
-              color: #fff;
-              padding: 18px;
-              font-size: 25px;
-              letter-spacing: 10px; /*espaço entre as letras*/
-          }
-        
-          /*parâmetros dos TÍTULOS sobre parágrafos no conteúdo textual*/
-
-          h3{
-              letter-spacing: .5em;
-              text-transform: uppercase;
-              font: bold 27px "Lato", sans-serif;/* shorthand de font*/
-              color: #111; /* hexadecimal abreviado #00ccff ou #0cf*/
-          }
-
-
-        </style>
+        <link  href="estilo/estilo-paralax.css" rel="stylesheet" type="text/css">
+        <link  href="estilo/responsive.css" rel="stylesheet" type="text/css">
     </head>
 <body>
-        <div id="bolinha_sobe">Para o topo</div>
+        <!--bolinha de top-->    
+    <div id="bolinha_sobe"><a href="#"> &#9650;</a></div>
     <!--Tela principal - Inicial -->
     <div class="bgimagem_1">
         <div class="TitBox">
@@ -91,7 +21,7 @@
     </div>
         <!--Branco - Texto de Introdução -->
         <div id="intro" style="color: #777; background-color: white; text-align: center; padding: 50px 80px;">
-                <div id="menu">
+                <nav id="menu">
                     <ul>
                         <li><a href="index.html">Home</a></li>
                         <li><a href="reserva.html">Reservar</a></li>
@@ -101,7 +31,7 @@
                 <!--texto de introdução-->
                 <h3 style="text-align: center;">IMPRESSIONE!</h3>
                 <p>A rolagem de <a href="#">paralaxe</a> é um estilo aplicado em <span style="font-weight: 400; background-color: yellow;">&nbsp;diversos sites &nbsp;</span>, cuja apresentação do conteúdo em segundo plano é movido a uma velocidade diferente do conteúdo em primeiro plano ao fazer a rolagem.</p>
-        </div>
+            </nav>
         <!--2º bloco de imagem -->
         <div class="bgimagem_2">
             <div class="TitBox">

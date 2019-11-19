@@ -1,0 +1,21 @@
+#bolinha_sobe{
+    content: '\0040';
+    z-index: 1000;
+    color: white;
+    font-weight: 900;
+    text-align: center;
+    position: fixed;
+    bottom: 35px;
+    right: 35px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%; /*o comando vai deixar o elemento circular*/
+    background: rgba(112, 95, 19, 0.3);
+    text-decoration: none;
+    font-size: 1.5em;
+}
+
+#bolinha_sobe:hover a{
+    background: rgba(223, 188, 33, 0.979);
+    transition: background .2s ;
+}

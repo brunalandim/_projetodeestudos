@@ -1,0 +1,126 @@
+        /*parâmetros globais*/
+        body, html{ /*altura do html em 100% permitiria acompanhar*/
+            height: 100%;
+            margin: 0;
+            font: 400 15px/1.8 "Lato", sans-serif;
+            color: #777;
+            scroll-behavior: smooth; /*suavização da rolagem da página*/
+        }  
+
+          /*LEMBRETE 
+          
+          Shorthand de fonte COMPLETO, com a ordem correta (sintaxe):
+          font-style font-variant font-wieght font-size/line-height font-family*/
+
+      
+
+        .bgimagem_1, .bgimagem_2, .bgimagem_3{
+          position: relative; /*respeita os irmãos == relative*/
+          opacity: .8;
+          background-repeat: no-repeat; /*imagens repetem no fundo em x e y*/
+          background-size: cover; /*dá cobertura no fundo pela maior dimensão*/
+          background-position: center; /*centerV centerH*/
+          background-attachment: fixed; /*sem rolagem junto com o objeto*/
+        }
+      
+        .bgimagem_1{
+            background-image: url("../imagens/duplo-4.jpg");
+            min-height: 100%;
+        }
+
+        .bgimagem_2{
+            background-image: url("../imagens/duplo-12.jpg");
+            min-height: 100%;
+        }
+
+        .bgimagem_1{
+            background-image: url("../imagens/paraquedismo03.jpg");
+            min-height: 100%;
+        }
+
+        /*parâmetros dos BOXES de TÍTULOS sobre as imagens*/
+
+        .TitBox{
+            position:absolute;
+            left: 0;
+            top: 50%;
+            width: 100%;
+            text-align: center;
+            color: #000;
+        }
+
+        .TitBox span.border{
+            background-color: #000;
+            color: #fff;
+            padding: 18px;
+            font-size: 25px;
+            letter-spacing: 10px; /*espaço entre as letras*/
+        }
+      
+        /*parâmetros dos TÍTULOS sobre parágrafos no conteúdo textual*/
+
+        h3{
+            letter-spacing: .5em;
+            text-transform: uppercase;
+            font: bold 27px "Lato", sans-serif;/* shorthand de font*/
+            color: #111; /* hexadecimal abreviado #00ccff ou #0cf*/
+        }
+                /*Navegação da página*/
+        nav{
+            position: fixed;
+            top: -100px;
+            /*vamos iniciar o menu fora da página depois trazê-lo*/
+            left: 0;
+            width: 100%;
+            height: 100px;
+            float: left;
+            opacity: 0;
+            background-color: rgba(58,29, 21, 0.397);
+        }
+
+        /* disparador para transição do menu <nav> */
+
+        div:hover nav, .bgimagem_1:hover + div nav {
+            /*seleciona um elemento após o outro,  aqui a seleção <div> <nav> só é selecionada se estiver imediatamente após  .bgimagem_1, desde que o mouse esteja sobre ele */
+            transition-property: opacity,top;
+            transition-duration: 2s, .6s;
+            opacity: 1;
+            transform-origin: top;
+            translate: 20;
+            top: 0px;
+        }
+
+        /*Cada item de lista dentro da navegação */
+
+        nav ul{
+            list-style: none;
+            height: 100%;
+            margin: 0;
+            background-image: linear-gradient( to bottom, rgba(255, 145, 0, 1), rgba(160, 138, 39, 0.5),rgba(15, 15, 14, 0)) ;
+        }
+
+        nav li:hover{
+            transition-property: background-color;
+            transition-duration: .3s;
+            transition-delay: .1s;
+            background-color: rgba(138, 45, 20, 0.397);
+        }
+
+        nav ul li{
+            float: left;
+            width: 15%;
+            height: 100%;
+            transition-property: background-color;
+            transition-duration: .3s;
+            transition-delay: .1s;
+        }
+
+        nav ul a {
+            display: block;
+            height: 100%;
+            text-align: center;
+            line-height: 6.5em;
+            text-decoration: none;
+            color: white;
+        }
+        
