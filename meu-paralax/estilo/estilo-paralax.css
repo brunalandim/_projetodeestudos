@@ -1,126 +1,176 @@
-        /*parâmetros globais*/
-        body, html{ /*altura do html em 100% permitiria acompanhar*/
-            height: 100%;
-            margin: 0;
-            font: 400 15px/1.8 "Lato", sans-serif;
-            color: #777;
-            scroll-behavior: smooth; /*suavização da rolagem da página*/
-        }  
+/*parâmetros globais*/
+body, html{ /*altura do html em 100% permitiria acompanhar*/
+    height: 100%;
+    margin: 0;
+    font: 400 15px/1.8 "Lato", sans-serif;
+    color: #777;
+    scroll-behavior: smooth; /*suavização da rolagem da página*/
+}  
 
-          /*LEMBRETE 
-          
-          Shorthand de fonte COMPLETO, com a ordem correta (sintaxe):
-          font-style font-variant font-wieght font-size/line-height font-family*/
+  /*LEMBRETE 
+  
+  Shorthand de fonte COMPLETO, com a ordem correta (sintaxe):
+  font-style font-variant font-wieght font-size/line-height font-family
+  */
 
-      
+html{
+  /*scroll-behavior:smooth*/
+}
 
-        .bgimagem_1, .bgimagem_2, .bgimagem_3{
-          position: relative; /*respeita os irmãos == relative*/
-          opacity: .8;
-          background-repeat: no-repeat; /*imagens repetem no fundo em x e y*/
-          background-size: cover; /*dá cobertura no fundo pela maior dimensão*/
-          background-position: center; /*centerV centerH*/
-          background-attachment: fixed; /*sem rolagem junto com o objeto*/
-        }
-      
-        .bgimagem_1{
-            background-image: url("../imagens/duplo-4.jpg");
-            min-height: 100%;
-        }
+.bgimagem_1, .bgimagem_2, .bgimagem_3{
+  position: relative; /*respeita os irmãos == relative*/
+  opacity: .8;
+  background-repeat: no-repeat; /*imagens repetem no fundo em x e y*/
+  background-size: cover; /*dá cobertura no fundo pela maior dimensão*/
+  background-position: center; /*centerV centerH*/
+  background-attachment: fixed; /*sem rolagem junto com o objeto*/
+}
 
-        .bgimagem_2{
-            background-image: url("../imagens/duplo-12.jpg");
-            min-height: 100%;
-        }
+.bgimagem_1{
+    background-image: url("../imagens/duplo-4.jpg");
+    min-height: 100%;
+}
 
-        .bgimagem_1{
-            background-image: url("../imagens/paraquedismo03.jpg");
-            min-height: 100%;
-        }
+.bgimagem_2{
+    background-image: url("../imagens/duplo-12.jpg");
+    min-height: 100%;
+}
 
-        /*parâmetros dos BOXES de TÍTULOS sobre as imagens*/
+.bgimagem_1{
+    background-image: url("../imagens/paraquedismo03.jpg");
+    min-height: 100%;
+}
 
-        .TitBox{
-            position:absolute;
-            left: 0;
-            top: 50%;
-            width: 100%;
-            text-align: center;
-            color: #000;
-        }
+/*parâmetros dos BOXES de TÍTULOS sobre as imagens*/
 
-        .TitBox span.border{
-            background-color: #000;
-            color: #fff;
-            padding: 18px;
-            font-size: 25px;
-            letter-spacing: 10px; /*espaço entre as letras*/
-        }
-      
-        /*parâmetros dos TÍTULOS sobre parágrafos no conteúdo textual*/
+.TitBox{
+    position:absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+}
 
-        h3{
-            letter-spacing: .5em;
-            text-transform: uppercase;
-            font: bold 27px "Lato", sans-serif;/* shorthand de font*/
-            color: #111; /* hexadecimal abreviado #00ccff ou #0cf*/
-        }
-                /*Navegação da página*/
-        nav{
-            position: fixed;
-            top: -100px;
-            /*vamos iniciar o menu fora da página depois trazê-lo*/
-            left: 0;
-            width: 100%;
-            height: 100px;
-            float: left;
-            opacity: 0;
-            background-color: rgba(58,29, 21, 0.397);
-        }
+.TitBox span.border{
+    background-color: #000;
+    color: #fff;
+    padding: 18px;
+    font-size: 25px;
+    letter-spacing: 10px; /*espaço entre as letras*/
+}
 
-        /* disparador para transição do menu <nav> */
+/*parâmetros dos TÍTULOS sobre parágrafos no conteúdo textual*/
 
-        div:hover nav, .bgimagem_1:hover + div nav {
-            /*seleciona um elemento após o outro,  aqui a seleção <div> <nav> só é selecionada se estiver imediatamente após  .bgimagem_1, desde que o mouse esteja sobre ele */
-            transition-property: opacity,top;
-            transition-duration: 2s, .6s;
-            opacity: 1;
-            transform-origin: top;
-            translate: 20;
-            top: 0px;
-        }
+h3{
+    letter-spacing: .5em;
+    text-transform: uppercase;
+    font: bold 27px "Lato", sans-serif;/* shorthand de font*/
+    color: #111; /* hexadecimal abreviado #00ccff ou #0cf*/
+}
 
-        /*Cada item de lista dentro da navegação */
+        /*Parâmetros da Tabela de preços*/
 
-        nav ul{
-            list-style: none;
-            height: 100%;
-            margin: 0;
-            background-image: linear-gradient( to bottom, rgba(255, 145, 0, 1), rgba(160, 138, 39, 0.5),rgba(15, 15, 14, 0)) ;
-        }
+table{
+        border: white;
+        font-size: 18px;
+        color: white;
+        border-collapse: collapse;
+        margin: auto;
+        width: 70%;
+    
+ }
 
-        nav li:hover{
-            transition-property: background-color;
-            transition-duration: .3s;
-            transition-delay: .1s;
-            background-color: rgba(138, 45, 20, 0.397);
-        }
+tr, td{
+     border: 1px solid orange;
+     text-align: center;
+ }
 
-        nav ul li{
-            float: left;
-            width: 15%;
-            height: 100%;
-            transition-property: background-color;
-            transition-duration: .3s;
-            transition-delay: .1s;
-        }
+span.negrito{
+        font-size: 1.5em;
+        margin: 15%;
+        padding: 10%;
+        display: table-cell;
+ }
 
-        nav ul a {
-            display: block;
-            height: 100%;
-            text-align: center;
-            line-height: 6.5em;
-            text-decoration: none;
-            color: white;
-        }
-        
+ ol.notas li{
+    margin: 5%;
+    /* padding: 5%; */
+    text-align: justify;
+ }
+
+ td.vertical, td.horizontal{
+   background-image: linear-gradient(rgba(235, 158, 16, 0.658),rgba(255, 255, 0, 0.664), rgba(22, 22, 4, 0.164) )
+ }
+            
+                            /*navegação da página*/
+nav{ 
+position: fixed;
+/*esse posicionamento fixa o elemento e um local*/
+top: -100px; /* *top: -100px;*/
+/*vamos iniciar o menu fora da página e trazê-lo para o local*/
+left: 0;
+z-index: 10000;
+width: 100%;
+height: 100px;
+float: left;
+opacity: 0; /* *opacity: 0;*/
+background-color: rgba(58, 29, 21, 0.397);  
+}
+
+/* disparador para a transição do menun <nav> */
+div:hover nav, .bgimagem_1:hover + div nav{
+    /* + seleciona um elemento imediatamente após o outro aqui a seleção <div> <nav> só é selecionada se estiver imediatamente após .bgimagem_1, desde que este esteja  com o mouse sobre ele */
+    transition-property: opacity, top;
+    transition-duration: 2s, .6s;
+    opacity: 1;
+    transform-origin: top;
+    translate: 20;
+    top: 0px; /* veio originalmente com '-100px' no seletor da <nav> */
+
+}
+
+/*cada item de lista dentro da navegação*/
+
+
+nav ul{
+    list-style: none;
+    height: 100%;
+    margin: 0;
+    background-image: linear-gradient(to bottom, rgba(255, 145, 0, 1), rgba(255, 208, 0, 0.5), rgba(15, 15, 14, 0));
+
+
+    /*gradiente 
+    temos algns tipos de gradiente 
+    o linear permite fazer por direção um gradiente reto
+    Exemplos: to top, to bottom, to left...
+    
+    cada ponto de cor entre as vírgullas será uma cor aplicada ao gradiente
+    pode ser usado porcentagem para definir em que ponto (do início ao fim) a cor será alocada*/
+}
+
+nav li:hover{
+    transition-property: background-color;
+    transition-duration: .3s;
+    transition-delay: .1s;
+    background-color: rgba(138, 45, 20, 0.397);
+}
+  /*como se comporta os itens de lista do menu (alocação, largura, altura...)*/
+nav ul li{
+    float: left; /*os itens ficam lado a lado */
+    width: 15%; /*calcule conforme necessidade e/ou estilo virtual*/
+    height: 100%;
+    transition-property: background-color;
+    transition-duration: .3s;
+    transition-delay: .1s;
+}
+
+nav ul a {
+    display: block; /*transforma o <a> de linha para bloco*/
+    height: 100%;
+    text-align: center;
+    line-height: 6.5em; /*macete: auxilia na centralização vertical no texto*/
+    text-decoration: none;
+    color: white;
+}
+
