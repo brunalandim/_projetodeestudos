@@ -124,10 +124,10 @@ table#horarios{
     float: right;
     font-size: 12px;
     /*display: table;  o display table é um jeito diferente de deixar a tabela menor */
-    width: 21%;
+    width: 62%;
     position: relative;
     height: 30px; 
-    transform: translate(134%,-8%);
+    transform: translate(142%,-75%);
     margin: 5px;
     background: #8080805e;
 }
@@ -139,24 +139,24 @@ span.border h3{
     color: white;
     width: 89%;
     /*height: 30px;*/
-    background-color: #7788997a;
     margin: 1%;
     font-size: 1.8em;
 }
 
 h3.titulo {
-    text-align: center;
-    margin: 5%;
-    transform: translate(273px, -44px);
-    /* margin-right: 5px; */
+    font: italic normal 1.4em georgia;
+    letter-spacing: 1px;
+    color: #7D775C;
+    transform: translate(69%,-91%);
 }
 
 p.promocional2 {
     width: 75%;
     position: relative;
     float: left;
-    background-color: #7788997a;
-
+    transform: translate(31%, 32%);
+    background-image: linear-gradient(45deg, #a29090d4,#6e2b2bd4, transparent);
+    border-radius: 10%;
 }
 
 
