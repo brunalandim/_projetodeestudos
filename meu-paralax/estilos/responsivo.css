@@ -1,0 +1,23 @@
+#botaozinhoDaRolagem a{
+    content: "\0040"; /*caractere especial em css*/
+    z-index: 1000; /*manter o botãozinho sempre acima dos outros elementos*/
+    color: white;
+    font-weight: 900;
+    text-align: center;
+    position: fixed;
+    
+    /*cuidado com alocações concorrentes top x bottom e lef x right*/
+    bottom: 35px; /*posição a partir de baixo (não use top neste caso)*/
+    right: 35px; /*posição a partir da direita (não use left neste caso)*/
+    width: 45px;
+    height: 45px;
+    border-radius: 50%; /*fará o box ficar circular*/
+    background: rgba(223, 188, 33, 0.3);
+    text-decoration: none;
+    font-size: 1.5em;
+}
+
+#botaozinhoDaRolagem:hover a{
+    background: rgba(223, 188, 33, 0.979);
+    transition: background .2s ; /*abreviação*/
+}
