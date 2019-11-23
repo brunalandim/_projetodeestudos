@@ -58,11 +58,12 @@ html{
     padding: 18px;
     font-size: 25px;
     letter-spacing: 10px; /*espaço entre as letras*/
+    font-weight: 400;
 }
 
 /*parâmetros dos TÍTULOS sobre parágrafos no conteúdo textual*/
 
-h3{
+h2{
     letter-spacing: .5em;
     text-transform: uppercase;
     font: bold 27px "Lato", sans-serif;/* shorthand de font*/
@@ -112,7 +113,7 @@ span.negrito{
     transition-duration: .2s;
 }
 
-div#blocotx_2 {
+section#blocotx_2 {
     min-height: 343px;
     background-color:black;
     display: flex;
@@ -124,14 +125,21 @@ table#horarios{
     float: right;
     font-size: 12px;
     /*display: table;  o display table é um jeito diferente de deixar a tabela menor */
-    width: 62%;
+    width: 31%;
     position: relative;
-    height: 30px; 
-    transform: translate(142%,-75%);
+    height: 90%;
+    transform: translate(-18%,-59%);
     margin: 5px;
     background: #8080805e;
 }
 
+
+ul.colunas60 {
+    width: 52%;
+    margin: 2%;
+    float: left;
+    transform: translate(8%,-18%);
+}
 
 
 span.border h3{
@@ -143,20 +151,34 @@ span.border h3{
     font-size: 1.8em;
 }
 
-h3.titulo {
+h2.titulo {
     font: italic normal 1.4em georgia;
     letter-spacing: 1px;
-    color: #7D775C;
-    transform: translate(69%,-91%);
+    color: rgb(241, 241, 241);
+    transform: translate(124%,-134%);
+    float: left;
+}
+
+
+h3.subtitulo {
+    float: left;
+    width: 58%;
+    letter-spacing: initial;
+    font: 200 1.1em "Lato",sans-serif;
+    color: white;
+    text-align: center;
+    transform: translate(-11%, 77%);
+    margin: 2%;
+    font-size: 18px;
 }
 
 p.promocional2 {
-    width: 75%;
+    width: 37%;
     position: relative;
     float: left;
-    transform: translate(31%, 32%);
+    transform: translate(-42%, 32%);
     background-image: linear-gradient(45deg, #a29090d4,#6e2b2bd4, transparent);
-    border-radius: 10%;
+    border-radius: 45%;
     text-align: center;
 }
 
@@ -177,7 +199,7 @@ background-color: rgba(58, 29, 21, 0.397);
 }
 
 /* disparador para a transição do menun <nav> */
-div:hover nav, .bgimagem_1:hover + div nav{
+section:hover nav, .bgimagem_1:hover + section nav{
     /* + seleciona um elemento imediatamente após o outro aqui a seleção <div> <nav> só é selecionada se estiver imediatamente após .bgimagem_1, desde que este esteja  com o mouse sobre ele */
     transition-property: opacity, top;
     transition-duration: 2s, .6s;

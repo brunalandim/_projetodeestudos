@@ -12,16 +12,16 @@
      
     </head>
 <body>
-                <!--botãozinho de rolagem-->    
+                <!--botãozinho de rolagem - elemento auxiliar-->    
     <div id="botaozinhoDaRolagem"><a href="#">&#9650;<!--caractere especial que significa "seta"--></a></div>
     <!--Tela principal - Inicial -->
-    <div class="bgimagem_1">
-        <div class="TitBox">
-            <span class="border">&downarrow;ROLE PARA BAIXO... &downarrow;</span>
-        </div>
-    </div>
-        <!--Branco - Texto de Introdução -->
-        <div id="intro" style="color: #777; background-color: white; text-align: center; padding: 50px 80px;">
+    <section id ="sliderfigura"  class="bgimagem_1">
+        <header class="TitBox">
+            <h1><span class="border">&downarrow;TÁ AFIM DE ADRENALINA... &downarrow;</span></h1>
+        </header>
+    </section>
+        <!--  Branco - seção com Texto de Introdução -->
+        <section id="intro" style="color: #777; background-color: white; text-align: center; padding: 50px 80px;">
                     <!--Menu de navegação-->    
             <nav id="menu"> <!-- <nav> tag semântica - navegação -->
                     <ul>
@@ -33,23 +33,26 @@
                     </ul>
                 </nav>
                     <!--fim do menu de navegação-->
+                    <article>
                 <!--texto de introdução-->
-                <h3 style="text-align: center;">IMPRESSIONE!</h3>
-                <p><!--A rolagem de <a href="#">paralaxe</a> é um estilo aplicado em <span style="font-weight: 400; background-color: yellow;">&nbsp;diversos sites &nbsp;</span>, cuja apresentação do conteúdo em segundo plano é movido a uma velocidade diferente do conteúdo em primeiro plano ao fazer a rolagem.--> Leve a sua <strong>sogra</strong> para saltar de paraquedas em Boituva com a RadicalXperience e ganhe uma camiseta de nossa marca. O paraquedismo é estilo de esporte radical aplicado ao processo de tomada de decisão e encorajamento aos desafios.</p>
+                   <header> <h2 style="text-align: center;">IMPRESSIONE!</h2></header>
+                    <p> Leve a sua <strong>sogra</strong> para saltar de paraquedas em Boituva com a RadicalXperience e ganhe uma camiseta de nossa marca. O paraquedismo é estilo de esporte radical aplicado ao processo de tomada de decisão e encorajamento aos desafios.</p>
 
-                <a href="#tabinvestimento">Consulte o valor de seu investimento</a>
-        </div>
-        <!--2º bloco de imagem -->
-        <div class="bgimagem_2">
-            <div class="TitBox">
-            <span class="border" style="background-color: transparent; font-size: 25px; color: #f8f8f8; text-shadow: #000 1px 1px 1px;">VAI ROLANDO...</span>
-            </div>
-        </div>
-       
-        <a name="tabinvestimento" id="tabinvestimento"></a>
-        <!--Tarja preta 01--> 
-        <div id="blocotx_1">
-            <div style="color: #ddd;background-color: rgb(0, 0, 0);padding: 50px 80px; text-align: justify;">
+                    <a href="#tabinvestimento">Consulte o valor de seu investimento</a>
+            </article>
+        </section> <!--Fim da seção da introdução-->
+        <!--2º bloco de imagem - Seção de produto-->
+        <section id="produto_1" class="bgimagem_2">
+            <header class="TitBox">
+            <h2><span class="border" style="background-color: transparent; font-size: 25px; color: #f8f8f8; text-shadow: #000 1px 1px 1px;">SINTA A EMOÇÃO!...</span></h2>
+            </header>
+        </section>
+        <!--fim da seção de produto -->
+     
+        <a name="tabinvestimento" id="tabinvestimento"><!--âncora para tabela investimento--></a>  
+        <!--Tarja preta 01 - Seção de valores | Investimento --> 
+        <section id="blocotx_1">
+            <article style="color: #ddd;background-color: rgb(0, 0, 0);padding: 50px 80px; text-align: justify;">
                <!-- <p>Role para cima e para baixo, para sentir o funcionamento da rolagem estilo "paralaxe" e pensar em ideias criativas...</p>-->
           
                     <!--TABELA DE PREÇOS-->
@@ -96,30 +99,39 @@
         </tr>
                 </table>
 
-            </div>
-        </div>
-        <!--3º bloco de imagem-->
-        <div class="bgimagem_3">
-            <div class="TitBox">
-            <span class="border" style="background-color: transparent; font-size: 25px; color: #f8f8f8; text-shadow: #000 1px 1px 1px;">FÁCIL... FÁCIL...</span>
-            </div>
-        </div>
-        <!--Tarja preta 02-->    
-        <a name="tabihorarios" id="tabihorarios"></a>
-        <div id="blocotx_2">
-            <div style="color: #ddd;background-color: rgb(0, 0, 0);padding: 50px 80px; text-align: justify;">
+            </article>
+        </section>
+        <!-- fim da seção de valores - Tarja preta 1 -->
+        <!--3º bloco de imagem - Seção de produtos -->
+        <section id="produto_2" class="bgimagem_3">
+            <header class="TitBox">
+            <h2><span class="border" style="background-color: transparent; font-size: 25px; color: #f8f8f8; text-shadow: #000 1px 1px 1px;">FÁCIL... FÁCIL...</span></h2>
+            </header>
+        </section>
+        <!--fim da seção de valores - tarja preta 1 -->
+        <a name="tabihorarios" id="tabihorarios"></a> 
+        <!--Tarja preta 02| Seção de horários -->
+        <section id="blocotx_2">
+            <article style="color: #ddd;background-color: rgb(0, 0, 0);padding: 50px 80px; text-align: justify;">
             <!--<p>Role para cima e para baixo, isso te fará entender o funcionamento da rolagem estilo "paralaxe". Crie interfaces com esse modelo.</p>-->
-                <span class="border" style="background-color: transparent; font-size: 18px; color: white;">
-                        <h3 class="titulo">Leve um amigo contigo</h3> 
-                </span>
+                
+        <header>
+            <span class="border" style="background-color: transparent; font-size: 18px; color: white;">
+                        <h2 class="titulo">Leve um amigo contigo</h2> 
+                </span></header>
          
             <p class="promocional2">Traga uma pessoa e <strong style="color: orange">viva</strong> um experiência impressionante. <br> Com cupom ganha 5% de desconto.<br> Verifica os horários disponíveis que temos pra você. <br> <strong style="color:orange ">Reserve um dia.</strong> </p> 
-
+            <h3 class="subtitulo">O que você precisa para saltar de paraquedas?</h3>
+                <ul class="colunas60">
+                    <li>Ser maior de 18 anos ou ter autorização dos responsáveis</li>
+                    <li>ter a saúde em dia e, se maior de 60 anos, trazer atestado médico para a prática do esporte</li>
+                    <li>coragem e determinação a gente garante pra você!</li>
+                </ul>
             <table id="horarios" class="horarioSaltos">
                 
                  
                  <tr>
-                        <td colspan="2">Horário de saltos</td>  
+                        <td class="horizontal"colspan="2">Horário de saltos</td>  
                     <tr>
                         <td>Seg-Sex</td>
                         <td>8h00 - 16h30</td>
@@ -136,20 +148,17 @@
                     </tr>
 
                     <tr>
-                        <td colspan="2"> Consulta: (11) 0000 - 0000</td>
+                        <td class="horizontal"colspan="2"> Consulta: (11) 0000 - 0000</td>
                     </tr>
                 </table>
 
-        </div>  
-            
-           
-            </div>
-        </div>
+            </article>  
+        </section>
         <!--4º bloco de imagem-->
-        <div class="bgimagem_1">
+        <section class="bgimagem_1">
             <div class="TitBox">
             <span class="border">&uparrow;AGORA,ROLE PARA CIMA... &uparrow;</span>
             </div>
-    </div>
+        </section>
 </body>
 </html>
