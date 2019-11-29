@@ -72,18 +72,40 @@
         font-size: 1.8em;
     }
 
-    table#horarios{
-        font-size: 1.8em;
-        /*display: table;  o display table é um jeito diferente de deixar a tabela menor */
-        width: 46%;
-        height: 24%;
-        /* transform: translate(-18%,-59%); */
-        margin: -101%;
-        margin-bottom: 7%;
-        margin-inline-end: -2%;
+    table{
+        margin: auto;
+        width: 44vh;
     }
 
+    
+    tr, td {
+        font-size: 1.2em;
+        width: 10vh; 
     }
+
+    p.promocional2 {
+        width: 36vh;
+    }
+
+    h3.subtitulo {
+        font-size: 1.8em;
+        width: 46vh;
+        margin: auto;
+        margin-block-end: 19%;
+    }
+    ul.colunas60 {
+        font-size: 1.4em;
+        width: 48vh;
+        margin: auto;
+        margin-block-end: 29%
+    }
+
+
+        table#horarios {
+            width: 43vh;
+            /* margin-block-start: -22%; */
+            height: auto;
+        }
 
         *,
         *:after,
@@ -92,24 +114,7 @@
         }
 
 
-   /* @font-face{
-        font-weight: normal;
-        font-style: normal;
-        font-family: 'ecoicons';
-        src: url("../fonts/ecoicons/ecoicons.eot");
-        src: url("../fonts/ecoicons/ecoicons.eot?#iefix") format("embedded-opentype"), url("projetodeestudos/accessibility") format("woff"), url("../fonts/ecoicons/ecoicons.ttf") format("truetype"), url("../fonts/ecoicons/ecoicons.svg#ecoicons") format("svg");  
-    
-    }
-
-    .icon {
-        display: inline-block;
-        width: 1em;
-        height: 1em;
-        stroke-width: 0;
-        stroke: currentColor;
-        fill: currentColor;
-      }*/
-
+                /*MENU DE NAVEGAÇÃO */
     .menu-main ul{
         margin: 0;
         padding: 0;
