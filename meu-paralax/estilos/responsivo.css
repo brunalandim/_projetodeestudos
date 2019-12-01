@@ -11,12 +11,12 @@
     /*cuidado com alocações concorrentes top x bottom e lef x right*/
     bottom: 35px; /*posição a partir de baixo (não use top neste caso)*/
     right: 35px; /*posição a partir da direita (não use left neste caso)*/
-    width: 45px;
-    height: 45px;
+    width: 65px;
+    height: auto;
     border-radius: 50%; /*fará o box ficar circular*/
     background: rgba(223, 188, 33, 0.3);
     text-decoration: none;
-    font-size: 1.5em;
+    font-size: 1.4em;
 }
 
 #botaozinhoDaRolagem:hover a{
@@ -37,6 +37,7 @@
       .bgimagem_1{
           background-image: url("../imagens/duplo-4.jpg");
           min-height: 100%;
+          max-width: 100% !important;
           background-size: 100%; 
           background-position-y: top;
           background-position-x: 255%;
@@ -62,14 +63,16 @@
 
       h2{
           letter-spacing: 0.2em;
+          font-size: 2.8em;
       }
 
       .TitBox span.border{
-        letter-spacing: 6px; 
+        letter-spacing: 0.2em; 
+        font-size: 2.8em;
       }
 
       a {
-        font-size: 1.8em;
+        font-size: 1.5em;
     }
 
     table{
@@ -87,14 +90,18 @@
         width: 36vh;
     }
 
+    h2.titulo {
+        font-size: 1.6em;
+    }
+
     h3.subtitulo {
-        font-size: 1.8em;
+        font-size: 1.9em;
         width: 46vh;
         margin: auto;
-        margin-block-end: 19%;
+        margin-block-end: 9%;
     }
     ul.colunas60 {
-        font-size: 1.4em;
+        font-size: 1.8em;
         width: 48vh;
         margin: auto;
         margin-block-end: 29%
@@ -127,8 +134,9 @@
         position: fixed;
         top: 0;
         left: 0;
-        height: 97px;
-        font-size: 13px;
+        height: auto;
+        font-size: 1.2em;
+        max-width: 100%;
    
     }
 
@@ -140,7 +148,7 @@
     }
 
 
-    .menu-main > li {
+    /*.menu-main > li {
         display: block;
         float: left;
         height: 100%;
@@ -165,11 +173,13 @@
         display: table;
         clear: both;
         content: icon;
-    }
+    }*/
 
     .menu-main li{
         overflow: visible;
         transition: height 0.3s;
-        /* height: 0; */
-        margin-right: 4.3%;
+        height: 12vh;
+        margin-right: 44.3%;
     }
+
+}
