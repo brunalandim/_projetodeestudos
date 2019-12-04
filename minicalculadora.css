@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css?family=Karla:400,700&display=swap');
+/* font-family: 'Karla', sans-serif; */
+
+body{
+    height: 100%;
+    width: 100%;
+    /* background-color: blue; */
+    opacity: 1;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+
+button{
+    border-radius: 60%;
+    background-color: orange; 
+    font-size: 18px;
+    font-family: 'Karla', sans-serif;
+}
+
+div#output{
+    font-size: 12rem;
+    font-weight: 600;
+    color: red;
+    text-align: center;
+}
