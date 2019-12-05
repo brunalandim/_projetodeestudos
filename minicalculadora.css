@@ -15,10 +15,19 @@ html{
 
 
 button{
-    border-radius: 60%;
+    border-radius: 28%;
     background-color: orange; 
     font-size: 18px;
     font-family: 'Karla', sans-serif;
+    margin: 9%;
+    box-shadow: 7px 5px 14px #ffff00b5;
+   font-weight: 500;
+}
+
+h1{
+    text-align: center;
+    font-weight: 600;
+    font-size: 3.6em;
 }
 
 div#output{
