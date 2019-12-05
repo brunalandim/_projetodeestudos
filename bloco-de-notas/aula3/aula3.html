@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Aula 3</title>
+    <link rel="stylesheet" href="aula3.css" type="text/css">
+</head>
+<body>
+    <!-- primeira caixa da tela -->
+    <section id="info01"></section>
+    <!-- segunda caixa da tela -->
+    <section id="info02"></section>
+    <!-- terceira caixa da tela -->
+    <section id="calculoIMC">
+        <h3>Peso</h3>
+        <h3>Altura</h3>
+        <h3>IMC</h3>
+        <div id="peso">80</div>
+        <div id="altura">1.70</div>
+        <div id="imc"></div>
+        <span id="result-imc"></span>
+    </section>
+    <!-- quarta caixa da tela -->
+    <form id="calculoIMC2" ><!--action="scripts/ comunic/sendmail.php" isso dá acesso para manipular os dados no banco de dados que você elaborou--> 
+        <h3>Peso</h3>
+        <h3>Altura</h3>
+        <h3>IMC</h3>
+        <div id="peso2"><input type="text" id="peso2in"></div>
+        <div id="altura2"><input type="text" id="altura2in"></div>
+        <div id="imc2"> <output id="imc2out"></output></div>
+        <button id="result-imc2">Calcular IMC</button>
+        
+        <!-- <input type="submit" value="Calcular IMC">
+        normalmente para submeter os dados  -->
+        <output id="imc2out"></output>
+        <div id= "diagMed"></div>
+    
+    </form>
+    <script src="aula3.js"></script>
+    
+</body>
+</html>

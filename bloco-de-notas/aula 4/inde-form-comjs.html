@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formulário Web</title>
+    <link rel="stylesheet" href="form-apenas.css" type="text/css">
+</head>
+<body onload="vlrdescini()">
+
+    <form oninput="total.value = Math.trunc(((diarias.valueAsNumber * 90) + (hospedes.valueAsNumber - 1) * 50) * apldesc.value)">
+    
+        <label>Nome Completo:</label>
+        <input type="text" id= "name_conpleto" name="name_conpleto" placeholder="Digite seu nome completo" require minlength="9">
+
+        <label>Email:</label>
+        <input type="text"  id="email_1" name="email_1" required>
+
+        <label> Repita o email:</label>
+        <input type="text" id="email_2" name="email_2" required oninput="check(this)">
+
+        <label>Data Chegada:</label>
+        <input type="date" id="data_chegada" name="data_chegada" required>
+
+        <label>Número de Diárias(R$99.00 por quarto):</label>
+        <input type="number" id="diarias" name="diarias" value="1" min="1" max="30" required oninput="promomsg()">
+        <label style="line-height: 34px;">Código Promocional:</label>
+        <input type="checkbox" id="hapromo" onclick="document.getElementById('promo').disabled = !this.checked;">
+        <input type="text" id="promo" name="promo" pattern="[A-Za-z0-9]{6}" title="os código promocionais consistem em 6 caracteres alfanúmericos*." oninput="promomsg()" onblur="verificacode()" disabled>
+
+        <input type="number">
+
+    </form>
+    
+</body>
+</html>

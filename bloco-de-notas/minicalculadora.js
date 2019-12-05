@@ -2,9 +2,8 @@ n2 = prompt('digite um número: ');
 n2 = parseFloat(n2);
 
 
-var output = escreve(); 
-
-
+escreve(n2);
+ 
 function escreve(){
     var output = document.querySelector('#output'); 
     output.innerHTML = n2; 
@@ -39,5 +38,5 @@ function divisao(){
     var nd = prompt('digite um número: '); 
 
     n2 = n2 / nd; 
-    escreve(); 
+    escreve().toFixed(2).toSlice(-2); 
 }
