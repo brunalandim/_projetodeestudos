@@ -1,0 +1,14 @@
+            COLUNA 01
+            
+            <p >Jquery é uma biblioteca (não é um Framework), que contém uma série de blocos em Javascript e permite, que simplifica a programação, tanto em seleção de elementos como em invocação de funções, alcance de objetos, uso de métodos e propriedades.</p>
+            <p >A forma como se usa Javascript puro, escrito em sua sintaxe padrão, é conhecida como Vanilla Javascript.</p>
+            <p >Diferente dessa forma, mas utilizando-se dela para compor objetos, funções e métodos, o JQuery traz uma sintaxe específica e muito simplificada.</p>
+
+
+            COLUNA 02
+
+
+            <p >A inserção do Jquery no documento HTML será diferente do costume atual adotado para &lt;script&gt; em Vanilla, ou seja, o &lt;script&gt; para vincular o arquivo do Jquery será colocado na seção <strong>&lt;head&gt;</strong>.</p>
+            <p >Para começar, é necessário trazer - preferencialmente - a última versão comprimida do Jquery e salvá-la em uma pasta ou na raiz.
+            </p>
+            <p >
