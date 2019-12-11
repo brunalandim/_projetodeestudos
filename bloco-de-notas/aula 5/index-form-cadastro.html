@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="formulariopessoal.css" type="text/css">
+</head>
+<body>
+    <div id="cadastroPess" style=" text-align: -webkit-center;">
+        <table class="cadInd">
+            <!-- vai aparecer uma lista do cadastro aqui -->
+        </table>
+    <form id="CadPessoa" action="" style="display: flex;flex-direction: column; width: 20%;">
+        <label>Nome:</label>
+        <input type="text" id="name" value="" name="name" placeholder="nome completo" minlength="15" required>
+        <label>Nascimento:</label>
+        <input type="date" id="data_nasc" name="data_nasc"  value="" required>
+        <label>Registro de Matrícula: </label>
+        <input type="text" id="rm_number" name="rm_number" value="" maxlength="4" required>
+        <label>Curso:</label>
+        <input type="text" id="curso" name="curso" placeholder="curso escolhido" value="" required>
+        <label>Endereço:</label>
+        <input type="text" id= "end" name="end" value="" required>
+        <label>Número</label>
+        <input type="text" id="end_number" name="end_number"  maxlength="4">
+        <label>Complemento:</label>
+        <input type="text" id="complemento" name="complemento">
+        <label>Cidade:</label>
+        <input type="text" id="cidade" name = "cidade" value="" required>
+        <label>Estado:</label>
+        <input type="text" id="estado" name="estado" value="" required>
+        <select id="estado2" name="estado2"  required>
+            <option value="São Paulo">SP</option>
+            <option value="Ceará">CE</option>
+            <option value="Bahia">BA</option>
+        </select>
+        <label>CEP:</label>
+        <input type="text" id="cep" name="cep" maxlength="8" value="" required>
+        <button id="guardarCadas" name="guardarCadas">Guardar Cadastro</button>
+    </form>
+
+    <form id="deleteAluno"action="" style="display: flex; flex-direction: column;width: 8%;">
+        <!-- <input type="submit" value="Guardar Cadastro"> -->
+        <input type="number" id="delAl" min="1" value="1" required>
+        <button id="menosAluno" name="menosAluno">Limpar Cadastro</button>
+    </form>
+    <script src="form_index.js"></script>
+</div>
+</body>
+</html>
