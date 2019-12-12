@@ -1,4 +1,4 @@
-// variavéis do formulário
+// variáveis do formulário
 var listaFicha = document.getElementsByClassName("tabHeroes"); 
 
 var formNome = document.getElementById("nome").value; 
