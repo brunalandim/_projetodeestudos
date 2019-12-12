@@ -11,12 +11,12 @@
     /*cuidado com alocações concorrentes top x bottom e lef x right*/
     bottom: 35px; /*posição a partir de baixo (não use top neste caso)*/
     right: 35px; /*posição a partir da direita (não use left neste caso)*/
-    width: 45px;
-    height: 45px;
+    width: 65px;
+    height: auto;
     border-radius: 50%; /*fará o box ficar circular*/
     background: rgba(223, 188, 33, 0.3);
     text-decoration: none;
-    font-size: 1.5em;
+    font-size: 1.4em;
 }
 
 #botaozinhoDaRolagem:hover a{
@@ -25,7 +25,9 @@
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (max-width:767px) and (min-width: 600px)  {
+@media only screen and (min-width: 600px) and  (max-width:767px) {
+
+
 
     .bgimagem_1, .bgimagem_2, .bgimagem_3 {
        position: relative; /* respeita os irmÃ£os */
@@ -37,6 +39,7 @@
       .bgimagem_1{
           background-image: url("../imagens/duplo-4.jpg");
           min-height: 100%;
+          max-width: 100% !important;
           background-size: 100%; 
           background-position-y: top;
           background-position-x: 255%;
@@ -59,31 +62,87 @@
       p{
           font-size: 1.8em;
       }
+    
 
+<<<<<<< HEAD
+      h2 {
+        margin-left: -17%;
+    }
+=======
       h2{
           letter-spacing: 0.2em;
+          font-size: 2.8em;
       }
+>>>>>>> 3bc58c61eedbc99806e77baa9e1d7a40c4f37a33
 
       .TitBox span.border{
-        letter-spacing: 6px; 
+        letter-spacing: 0.2em; 
+        font-size: 2.8em;
       }
 
       a {
-        font-size: 1.8em;
+        font-size: 1.5em;
     }
 
-    table#horarios{
-        font-size: 1.8em;
-        /*display: table;  o display table é um jeito diferente de deixar a tabela menor */
-        width: 46%;
-        height: 24%;
-        /* transform: translate(-18%,-59%); */
-        margin: -101%;
-        margin-bottom: 7%;
-        margin-inline-end: -2%;
+    table{
+        margin: auto;
+        width: 44vh;
+<<<<<<< HEAD
     }
 
+    
+    tr, td {
+        font-size: 1.2em;
+        width: 10vh; 
     }
+
+=======
+    }
+
+    
+    tr, td {
+        font-size: 1.2em;
+        width: 10vh; 
+    }
+
+>>>>>>> 3bc58c61eedbc99806e77baa9e1d7a40c4f37a33
+    p.promocional2 {
+        width: 36vh;
+    }
+
+    h2.titulo {
+        font-size: 1.6em;
+    }
+
+    h3.subtitulo {
+        font-size: 1.9em;
+        width: 46vh;
+        margin: auto;
+        margin-block-end: 9%;
+    }
+    ul.colunas60 {
+        font-size: 1.8em;
+        width: 48vh;
+        margin: auto;
+        margin-block-end: 29%
+    }
+
+<<<<<<< HEAD
+<<<<<<< HEAD
+     
+
+
+        /*Menu Navegação*/
+
+=======
+=======
+>>>>>>> 3bc58c61eedbc99806e77baa9e1d7a40c4f37a33
+
+        table#horarios {
+            width: 43vh;
+            /* margin-block-start: -22%; */
+            height: auto;
+        }
 
         *,
         *:after,
@@ -92,24 +151,11 @@
         }
 
 
-   /* @font-face{
-        font-weight: normal;
-        font-style: normal;
-        font-family: 'ecoicons';
-        src: url("../fonts/ecoicons/ecoicons.eot");
-        src: url("../fonts/ecoicons/ecoicons.eot?#iefix") format("embedded-opentype"), url("projetodeestudos/accessibility") format("woff"), url("../fonts/ecoicons/ecoicons.ttf") format("truetype"), url("../fonts/ecoicons/ecoicons.svg#ecoicons") format("svg");  
-    
-    }
-
-    .icon {
-        display: inline-block;
-        width: 1em;
-        height: 1em;
-        stroke-width: 0;
-        stroke: currentColor;
-        fill: currentColor;
-      }*/
-
+                /*MENU DE NAVEGAÇÃO */
+<<<<<<< HEAD
+>>>>>>> 3bc58c61eedbc99806e77baa9e1d7a40c4f37a33
+=======
+>>>>>>> 3bc58c61eedbc99806e77baa9e1d7a40c4f37a33
     .menu-main ul{
         margin: 0;
         padding: 0;
@@ -122,8 +168,9 @@
         position: fixed;
         top: 0;
         left: 0;
-        height: 97px;
-        font-size: 13px;
+        height: auto;
+        font-size: 1.2em;
+        max-width: 100%;
    
     }
 
@@ -135,7 +182,7 @@
     }
 
 
-    .menu-main > li {
+    /*.menu-main > li {
         display: block;
         float: left;
         height: 100%;
@@ -156,15 +203,20 @@
         font-weight: bold;
     }
 
+<<<<<<< HEAD
+=======
     .menu-main:after{
         display: table;
         clear: both;
         content: icon;
-    }
+    }*/
 
+>>>>>>> 3bc58c61eedbc99806e77baa9e1d7a40c4f37a33
     .menu-main li{
         overflow: visible;
         transition: height 0.3s;
-        /* height: 0; */
-        margin-right: 4.3%;
+        height: 12vh;
+        margin-right: 44.3%;
     }
+
+}

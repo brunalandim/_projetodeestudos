@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sintaxe do Jquery 2</title>
+    <link rel="stylesheet" href="estilos/pages-aulas.css" type="text/css">
+    <script name="jquery" src="js/jquery-3.4.1.min.js"></script>
+</head>
+<body>
+    <main class="col-10">
+        <header id="título">
+            <h1>Introdução Jquery <span>O que é?</span></h1>
+        </header>
+        <img class="col-2" id="imgPagina" src="img/jquery-logo.png" alt="logo" title="logo" srcset="">
+        <div id="c01" class="blocoTxt col-5">
+      
+                <p >Certamente, neste ponto podemos lembrar do <strong>innerHTML</strong>. Ele surge aqui de forma distinta, porém muito intuitiva.</p>
+                <code>
+                   $( "#btMudaTeste" ).html();
+                </code>
+          <p>Da mesma forma que utliza-se o "innerHTML" no Javascript Vanilla, é possivel atribuir valores nessa propriedade usando essa sintaxe acima, através do JQuery. lembre de que é necessário estar vinculado ao arquivo do JQuery na tag.</p>
+          <code>
+             &lt;script src="js/jquery-3.4.1.min.js"&gt;&lt;/script&gt;
+          </code>
+
+    
+        </div>
+        <div id="c02" class="blocoTxt col-5">
+            
+                <p>Observe os elementos abaixo. Ao clicar no botão "Mudar" o texto dos 3 elementos serão alterados.</p>         
+                <div class="blocoTxTeste">Texto 1</div>
+                <div class="blocoTxTeste">Textp 2</div>
+                <div class="blocoTxTeste">Texto 3</div>
+                <button id="btMudaTeste">Mudar</button>
+                <script>
+                // programe aqui
+                $("#btMudaTeste").click(function(){
+                    $(".blocoTxTeste").html('buraco do amendoim')
+                });
+    
+                </script>
+    
+                <p><strong>Se tudo deu certo,</strong> tente agora construir uma rotina que <strong> oculte 2 elementos acima</strong>, e também <strong>altere o tamanho</strong> do elemento que restou, bem como troque o seu texto para a frase "Pronto! Já entendo um mínimo de JQuery". <strong>Para caber tudo neste espaço</strong>, você <u>também terá que ocultar o presente parágrafo</u>.
+                </p>
+                <p>
+                <button id="abreModal"><a>Use este botão para isso</a></button></p>
+            </div>
+            <hr class="divisor">
+            <button id="proximo" style="display: unset;">
+            <a href="jquery-01.html">Voltar Tela 01</a>
+            </button>
+        <!-- quadro de avisos -->
+        <p class="importante"><strong>Abra seu editor de código</strong>: faça a edição em Jquery e depois salve este documento com o nome "jquery-01-modificado.html".</p>
+    </main>
+    <div id="modal">
+        <span id="fechaModal" class="right">X</span>
+        <p><strong>Se tudo deu certo, você verá:</strong> além desta mensagem, mais uma vez, terá os 3 elementos de texto <strong>novamente vísiveis</strong> na tela. Basta fechar este modal para vê-los melhor.</p>
+    </div>
+    <script src="js/paginas.js"></script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sintaxe do Jquery</title>
+    <link rel="stylesheet" href="estilos/pages-aulas.css" type="text/css">
+    <script name="jquery" src="js/jquery-3.4.1.min.js"></script>
+</head>
+<body>
+    <main class="col-10">
+        <header id="título">
+            <h1>Introdução Jquery <span>O que é?</span></h1>
+        </header>
+        <img class="col-2" id="imgPagina" src="img/jquery-logo.png" alt="logo" title="logo" srcset="">
+        <div id="c01" class="blocoTxt col-5">
+      
+                <p >A maioria das coisas que fazemos com Jquery terá início com o caractere $ seguido de objeto e a��o.</p>
+                <code>
+                   $( "#btMudaTeste" ).click(function() {
+                         $(".blocoTxTeste").hide();
+                   });
+                </code>
+          <p>As tags podem ser selecionadas facilmente por Id, Class,Tipo, bastando para isso declarar entre parenteses, da mesma forma que é feito no CSS.</p>
+          <p>Antes de tudo, se você já salvou seu arquivo "jquery", você precisa inserir a tag &lt;script&gt; que aponta para o arquivo. Abra esta p�gina em seu editor de c�digos e <strong>faça isso agora</strong>.</p>
+          <code>
+             &lt;script src="js/jquery-3.4.1.min.js"&gt;&lt;/script&gt;
+          </code>
+
+    
+        </div>
+        <div id="c02" class="blocoTxt col-5">
+            <p>Observe os elementos abaixo. Eles n�o podem ser eliminados da p�gina enquanto você não tenha incluído a tag &lt;script&gt; no &lt;head&gt; da p�gina.</p>   
+            <div class="blocoTxTeste">Texto 1</div>
+            <div class="blocoTxTeste">Texto 2</div>
+            <div class="blocoTxTeste">Texto 3</div>
+            <button id="btMudaTeste">Mudar</button>
+
+            <script>
+            $("#btMudaTeste").click(function(){
+                $(".blocoTxTeste").hide(); }); 
+            </script>
+            
+                       <p>Ao clicar no botão acima, os 3 elementos que o antecedem ficar�o ocultos. <strong>Tente agora construir uma rotina que os fa�a reaparacer.</strong>
+                        </p>
+                        <p>
+                        <button id="abreModal"><a>Use este botão para isso</a></button></p> 
+                        <script>
+                        $('#abreModal').click(function(){
+                            $(".blocoTxTeste").show(); 
+                        })
+                        </script>
+        </div>
+        <hr class="divisor">
+        <button id="proximo" style="display: unset;">
+        <a href="jquery-03.html">Próximo</a>
+        </button>
+        <!-- quadro de avisos -->
+        <p class="importante"><strong>Abra seu editor de código</strong>: faça a edição em Jquery e depois salve este documento com o nome "jquery-01-modificado.html".</p>
+    </main>
+    <div id="modal">
+        <span id="fechaModal" class="right">X</span>
+        <p><strong>Se tudo deu certo, você verá:</strong> além desta mensagem, mais uma vez, terá os 3 elementos de texto <strong>novamente vísiveis</strong> na tela. Basta fechar este modal para vê-los melhor.</p>
+    </div>
+    <script src="js/paginas.js"></script>
+</body>
+</html>

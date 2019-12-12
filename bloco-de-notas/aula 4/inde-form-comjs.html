@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formulário Web</title>
+    <link rel="stylesheet" href="form-apenas.css" type="text/css">
+</head>
+<body onload="vlrdescini()">
+
+                        <!-- formulário principal -->
+
+    <form oninput="total.value = Math.trunc(((diarias.valueAsNumber * 99) + ((hospedes.valueAsNumber - 1) * 50)) * apldesc.value)">
+                    <!-- Dados pessoais  -->
+        <label>Nome Completo:</label>
+        <input type="text" id= "name_completo" name="name_completo" placeholder="Digite seu nome completo" required minlength="9">
+
+        <label>Email:</label>
+        <input type="email"  id="email_1" name="email_1" required>
+
+        <label> Repita o email:</label>
+        <input type="email" id="email_2" name="email_2" required oninput="check(this)">
+
+        <label>Data Chegada:</label>
+        <input type="date" id="data_chegada" name="data_chegada" required>
+                        <!-- diárias  -->
+        <label>Número de Diárias(R$99.00 por quarto):</label>
+        <input type="number" id="diarias" name="diarias" value="1" min="1" max="30" required oninput="promomsg()">
+                        <!-- número de hóspedes -->
+        <label>Número de Hóspedes(a cada hóspede adicional acrescemos R$ 50,00 por noite):</label>
+        <input type="number"  id="hospedes" name="hospedes" value="1"  min="1" max="4" required oninput="promomsg()">
+                        <!-- código promocional - aqui está a id #promo -->
+        <label style="line-height: 34px;">Código Promocional:</label>
+        <input type="checkbox" id="hapromo" onclick="document.getElementById('promo').disabled = !this.checked;">
+        <input type="text" id="promo" name="promo" pattern="[A-Za-z0-9]{6}" title="os código promocionais consistem em 6 caracteres alfanúmericos*." oninput="promomsg()" onblur="verificaCode()" disabled>
+        <input type="number" value="" name="apldesc" id="apldesc" disabled>
+                        <!-- fim do código promocional -->
+        <output id="promomsgtx" name="promomsgtx">Valor sem Desconto: </output>
+        
+        <div id="tot">
+            <label>Total:</label>
+            R$ <output id="total" name="total">99</output>,00
+            <br><br>
+        </div>
+        <input type="submit" value="Solicitar Reserva">
+    </form>
+
+    <script>
+
+        function vlrdescini(){
+            coefDescIni = 1; 
+            document.getElementById("apldesc").value = coefDescIni; 
+        }
+
+        function check(input){
+            if (input.value != document.getElementById('email_1').value){
+                input.setCustomValidity('A confirmação de endereço de e-mail não é igual ao email informado acima.');
+            }else{
+                input.setCustomValidity('');
+            }
+        }
+
+        function promomsg(){
+            var promovar = 'sad026';
+            var promovar2 = 'cod748'; 
+            var promovar3 = 'pin946'; 
+            // var promovar4 = 'set900';
+            // var promovar5 =  'but396'; 
+
+            var gtpromo = document.getElementById('promo').value; 
+
+            var vlrdesc = 0.9; 
+            var vlrdesc2 = 0.8;
+           
+            if (gtpromo == promovar){
+
+                msgtxt = 'Código promocional com 10% de desconto!'; 
+
+                document.getElementById('promomsgtx').innerHTML = msgtxt; 
+
+                document.getElementById('apldesc').value = vlrdesc; 
+            } 
+            else if (promovar2 == gtpromo && gtpromo != promovar || gtpromo == promovar3){
+                msgtxt = 'Código promocional com 20% de desconto!';
+                document.getElementById('promomsgtx').innerHTML = msgtxt; 
+                document.getElementById('apldesc').value = vlrdesc2; 
+
+            }
+            // else if( getpromo == promovar4 || getpromo == promovar5){
+            //     msgtxt = 'Código promocional com 15% de desconto!';
+            //     document.getElementById('promomsgtx').innerHTML = msgtxt; 
+            //     document.getElementById('apldesc').value = vlrdesc3; 
+
+            // }
+            else if (promovar != gtpromo || gtpromo == ''){
+                vlrdesc = 1; 
+                msgtxt = 'Valor sem desconto*: '; 
+                document.getElementById('promomsgtx').innerHTML = msgtxt; 
+                document.getElementById('apldesc').value = vlrdesc; 
+            }
+        }
+
+        function verificaCode(){
+            var chaves = ['sad026', 'cod748', 'pin946', 'set900','but396'];
+            var item = document.getElementById('promo').value; 
+
+            if(chaves.indexOf(item) > -1){
+                window.alert('Código Válido'); 
+            } else{
+                window.alert('Código Inválido, você pode deixar em branco'); 
+            }
+        }
+    </script>
+    
+</body>
+</html>

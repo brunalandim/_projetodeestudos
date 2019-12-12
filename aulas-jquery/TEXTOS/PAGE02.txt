@@ -1,0 +1,34 @@
+COLUNA 01
+
+
+
+            <p >A maioria das coisas que fazemos com Jquery terá início com o caractere $ seguido de objeto e ação.</p>
+                  <code>
+                     $( "#btMudaTeste" ).click(function() {
+                           $(".blocoTxTeste").hide();
+                     });
+                  </code>
+            <p>As tags podem ser selecionadas facilmente por Id, Class,Tipo, bastando para isso declarar entre parênteses, da mesma forma que é feito no CSS.</p>
+            <p>Antes de tudo, se você já salvou seu arquivo "jquery", você precisa inserir a tag &lt;script&gt; que aponta para o arquivo. Abra esta página em seu editor de códigos e <strong>faça isso agora</strong>.</p>
+            <code>
+               &lt;script src="js/jquery-3.4.1.min.js"&gt;&lt;/script&gt;
+            </code>
+
+
+
+COLUNA 02
+
+
+
+            <p>Observe os elementos abaixo. Eles não podem ser eliminados da página enquanto você não tenha incluído a tag &lt;script&gt; no &lt;head&gt; da página.</p>   
+
+<script></script>
+
+           <p>Ao clicar no botão acima, os 3 elementos que o antecedem ficarão ocultos. <strong>Tente agora construir uma rotina que os faça reaparacer.</strong>
+            </p>
+            <p>
+            <button id="abreModal"><a>Use este botão para isso</a></button></p>      
+
+
+
+

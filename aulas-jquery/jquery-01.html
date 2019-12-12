@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>jquery - aula 01</title>
+    <link rel="stylesheet" href="estilos/pages-aulas.css" type="text/css">
+</head>
+<body>
+    <main class="col-10">
+        <header id="título">
+            <h1>Introdução Jquery <span>O que é?</span></h1>
+        </header>
+        <img class="col-2" id="imgPagina" src="img/jquery-logo.png" alt="logo" title="logo" srcset="">
+        <div id="c01" class="blocoTxt col-5">
+                <p >Jquery é uma biblioteca (não é um Framework), que contém uma série de blocos em Javascript e permite, que simplifica a programação, tanto em seleção de elementos como em invocação de funções, alcance de objetos, uso de métodos e propriedades.</p>
+                <p >A forma como se usa Javascript puro, escrito em sua sintaxe padrão, é conhecida como Vanilla Javascript.</p>
+                <p >Diferente dessa forma, mas utilizando-se dela para compor objetos, funções e métodos, o JQuery traz uma sintaxe específica e muito simplificada.</p>
+    
+        </div>
+        <div id="c02" class="blocoTxt col-5">
+
+                <p >A inserção do Jquery no documento HTML será diferente do costume atual adotado para &lt;script&gt; em Vanilla, ou seja, o &lt;script&gt; para vincular o arquivo do Jquery será colocado na seção <strong>&lt;head&gt;</strong>.</p>
+                <p >Para começar, é necessário trazer - preferencialmente - a última versão comprimida do Jquery e salvá-la em uma pasta ou na raiz.
+                </p>
+                <p>
+                    <!-- BOTÃO DE ABERTURA DO MODAL E LINK PARA JQUERY  -->
+                    <button id="abreModal">
+                        <a href="https://jquery.com//download/" target="_blank">Vamos baixar!</a>
+                        <!-- _blank | _self | _parent | _top | Id de um <iframe> -->
+                    </button>
+                    </p>
+        </div>
+        <hr class="divisor">
+        <button id="proximo" style="display: none;">
+        <a href="jquery-02.html">Próximo</a>
+        </button>
+        <!-- quadro de avisos -->
+        <p class="importante"><strong>Importante</strong>: pode acontecer de o navegador abrir o código diretamente na tela. Selecione, copie, crie um arquivo JS manualmente e cole o código. Salve ao final.</p>
+    </main>
+    <div id="modal">
+        <span id="fechaModal" class="right">X</span>
+        <p>Neste ponto você precisa verifica o <strong>status de downloads</strong> em seu navegador ou - caso tenha surgido o <strong>código em sua janela</strong> - você deve copiar e colar o código em um arquivo criado manualmente.</p>
+    </div>
+    <script src="js/paginas.js"></script>
+</body>
+</html>

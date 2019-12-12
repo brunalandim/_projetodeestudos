@@ -1,0 +1,48 @@
+*{
+    margin: 0; 
+    padding: 0;
+    background-color:rgba(245, 248, 252, 0.527);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+label{
+    font-weight: 600;
+    margin-top: 20px;
+    text-align: justify;
+}
+
+input, button{
+    margin: 10px;
+    padding: 5px; 
+    border-radius: 0 5px 0 0;
+    box-shadow: 2px 2px 2px 1px rgb(115, 133, 187);
+}
+
+form{
+    /* max-height: 500px; */
+    min-height: 190px;
+    margin: 5px;
+    width: 25%;
+}
+
+.cadInd, .cadInd td, .cadInd th{
+    border: blue 1px solid;
+    border-collapse: collapse;
+    padding: 5px;
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+}
+
+.cadInd::before{
+    content: 'Cadastro Pessoal';
+    width: 100%;
+    background-color: rgba(0, 0, 255, 0.418);
+    color: grey;
+    font-size: 1.2em;
+    display: table-cell; 
+    /* margin: auto; */
+    padding: 10px;
+    line-height: 20px;
+    border-radius: 0 5px 0 0;
+}
