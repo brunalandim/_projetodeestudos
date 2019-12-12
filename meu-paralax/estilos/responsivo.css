@@ -64,16 +64,16 @@
       }
     
 
-<<<<<<< HEAD
+
       h2 {
         margin-left: -17%;
     }
-=======
+
       h2{
           letter-spacing: 0.2em;
           font-size: 2.8em;
       }
->>>>>>> 3bc58c61eedbc99806e77baa9e1d7a40c4f37a33
+
 
       .TitBox span.border{
         letter-spacing: 0.2em; 
@@ -87,38 +87,22 @@
     table{
         margin: auto;
         width: 44vh;
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 3bc58c61eedbc99806e77baa9e1d7a40c4f37a33
     }
 
     
     tr, td {
         font-size: 1.2em;
         width: 10vh; 
-<<<<<<< HEAD
+
     }
 
-=======
-    }
+
+
 
     
     tr, td {
         font-size: 1.2em;
         width: 10vh; 
-    }
-
->>>>>>> 3bc58c61eedbc99806e77baa9e1d7a40c4f37a33
-    p.promocional2 {
-        width: 36vh;
-    }
-
-    h2.titulo {
-        font-size: 1.6em;
-    }
-
-=======
     }
 
     p.promocional2 {
@@ -129,7 +113,19 @@
         font-size: 1.6em;
     }
 
->>>>>>> 3bc58c61eedbc99806e77baa9e1d7a40c4f37a33
+
+    }
+
+    p.promocional2 {
+        width: 36vh;
+
+    }
+
+    h2.titulo {
+        font-size: 1.6em;
+    }
+
+
     h3.subtitulo {
         font-size: 1.9em;
         width: 46vh;
@@ -151,11 +147,24 @@
 
         /*Menu Navegação*/
 
-=======
-=======
->>>>>>> 3bc58c61eedbc99806e77baa9e1d7a40c4f37a33
-=======
->>>>>>> 3bc58c61eedbc99806e77baa9e1d7a40c4f37a33
+
+    h2.titulo {
+        font-size: 1.6em;
+    }
+
+    h3.subtitulo {
+        font-size: 1.9em;
+        width: 46vh;
+        margin: auto;
+        margin-block-end: 9%;
+    }
+    ul.colunas60 {
+        font-size: 1.8em;
+        width: 48vh;
+        margin: auto;
+        margin-block-end: 29%
+    }
+
 
         table#horarios {
             width: 43vh;
@@ -163,21 +172,11 @@
             height: auto;
         }
 
-        *,
-        *:after,
-        *::before{
-            box-sizing: border-box;
-        }
+      
 
 
                 /*MENU DE NAVEGAÇÃO */
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> 3bc58c61eedbc99806e77baa9e1d7a40c4f37a33
-=======
->>>>>>> 3bc58c61eedbc99806e77baa9e1d7a40c4f37a33
-=======
->>>>>>> 3bc58c61eedbc99806e77baa9e1d7a40c4f37a33
+
     .menu-main ul{
         margin: 0;
         padding: 0;
@@ -225,15 +224,13 @@
         font-weight: bold;
     }
 
-<<<<<<< HEAD
-=======
+
     .menu-main:after{
         display: table;
         clear: both;
         content: icon;
     }*/
 
->>>>>>> 3bc58c61eedbc99806e77baa9e1d7a40c4f37a33
     .menu-main li{
         overflow: visible;
         transition: height 0.3s;
