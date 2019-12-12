@@ -64,30 +64,24 @@
       }
     
 
-<<<<<<< HEAD
-      h2 {
-        margin-left: -17%;
-    }
-=======
-      h2{
-          letter-spacing: 0.2em;
-          font-size: 2.8em;
-      }
->>>>>>> 3bc58c61eedbc99806e77baa9e1d7a40c4f37a33
-
-      .TitBox span.border{
-        letter-spacing: 0.2em; 
-        font-size: 2.8em;
-      }
-
-      a {
         font-size: 1.5em;
     }
 
     table{
         margin: auto;
         width: 44vh;
-<<<<<<< HEAD
+
+
+
+    }
+    
+    tr, td {
+        font-size: 1.2em;
+        width: 10vh; 
+
+    }
+
+
     }
 
     
@@ -96,16 +90,7 @@
         width: 10vh; 
     }
 
-=======
-    }
 
-    
-    tr, td {
-        font-size: 1.2em;
-        width: 10vh; 
-    }
-
->>>>>>> 3bc58c61eedbc99806e77baa9e1d7a40c4f37a33
     p.promocional2 {
         width: 36vh;
     }
@@ -114,6 +99,15 @@
         font-size: 1.6em;
     }
 
+    }
+
+    p.promocional2 {
+        width: 36vh;
+    }
+
+    h2.titulo {
+        font-size: 1.6em;
+}
     h3.subtitulo {
         font-size: 1.9em;
         width: 46vh;
@@ -127,16 +121,7 @@
         margin-block-end: 29%
     }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-     
 
-
-        /*Menu Navegação*/
-
-=======
-=======
->>>>>>> 3bc58c61eedbc99806e77baa9e1d7a40c4f37a33
 
         table#horarios {
             width: 43vh;
@@ -144,18 +129,11 @@
             height: auto;
         }
 
-        *,
-        *:after,
-        *::before{
-            box-sizing: border-box;
-        }
+  
 
 
                 /*MENU DE NAVEGAÇÃO */
-<<<<<<< HEAD
->>>>>>> 3bc58c61eedbc99806e77baa9e1d7a40c4f37a33
-=======
->>>>>>> 3bc58c61eedbc99806e77baa9e1d7a40c4f37a33
+
     .menu-main ul{
         margin: 0;
         padding: 0;
@@ -203,15 +181,6 @@
         font-weight: bold;
     }
 
-<<<<<<< HEAD
-=======
-    .menu-main:after{
-        display: table;
-        clear: both;
-        content: icon;
-    }*/
-
->>>>>>> 3bc58c61eedbc99806e77baa9e1d7a40c4f37a33
     .menu-main li{
         overflow: visible;
         transition: height 0.3s;
