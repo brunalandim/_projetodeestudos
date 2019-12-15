@@ -21,8 +21,15 @@
     form{
         min-height: 200px;
         font-family: 'Lilita One', cursive;
-        margin: 20%;
+        margin: 8%;
     }   
+
+    form#deleteFicha {
+        /* bottom: 40%; */
+        /* top: 3%;
+        margin-left: 89%; */
+        margin: -7%;
+    }
 
     input, button{
         padding: 5px;
