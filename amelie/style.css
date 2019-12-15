@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* video{
+    width: 100%;
+} */
+
+body{
+    font-family: sans-serif;
+}
+
+.intro{
+    height: 100vh;
+    background: border-box black;
+}
+
+.intro video{
+    height: 82%;
+    width: 100%;
+    margin: 4%;
+}
+
+
+.intro h1{
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-49%, -50%);
+    font-size: 62px;
+}
+
+section{
+    height: 100vh;
+    color: black;
+}
+
+section h1{
+    padding-top: 300px;
+    text-align: center;
+    font-size: 80px;
+
+}
