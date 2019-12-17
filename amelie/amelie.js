@@ -1,5 +1,5 @@
-// repetir esse projeto através desse link aqui: https://www.youtube.com/watch?v=wLUJ9VNzZXo
-// ainda não conseguir colocar a posição do mouse para controlar o vídeo
+// para repetir esse projeto através desse link aqui: https://www.youtube.com/watch?v=wLUJ9VNzZXo
+// ainda não consegui colocar a posição do mouse para controlar o vídeo
 
 const intro = document.querySelector('.intro'); 
 const video = intro.querySelector('video');
