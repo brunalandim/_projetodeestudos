@@ -1,6 +1,5 @@
 // para repetir esse projeto através desse link aqui: https://www.youtube.com/watch?v=wLUJ9VNzZXo
-// ainda não consegui colocar a posição do mouse para controlar o vídeo
-
+// ainda não consegui entender o bug que dá 
 const intro = document.querySelector('.intro'); 
 const video = intro.querySelector('video');
 const text = intro.querySelector('h1'); 
