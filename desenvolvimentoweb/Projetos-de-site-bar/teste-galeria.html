@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+     <title>Document</title>
+
+     <style>
+     *{
+          padding: 0;
+          margin: 0;
+          box-sizing: border-box;
+     }
+
+     ul{
+          width: 100%;
+          height: auto;
+          list-style: none;
+          display: flex;
+          margin: 20px auto;
+     }
+
+     .imgs{
+          width: 200px;
+          padding: 10px;
+     }
+
+     .box-imag{
+
+          visibility: hidden;
+          opacity: 0;
+     }
+
+     .box-imag:target{
+          opacity: 1;
+          visibility: visible;
+          width: 100%;
+          top: 0;
+          left: 0;
+          background-color: rgba(10,10,10,0.7);
+          position: fixed;
+     }
+
+
+     
+     </style>
+</head>
+<body>
+     <ul class="contaner-slider">
+          <li><a href="#img"><img src="./img/bebidas-apa.jpg" alt="cerveja" class="imags"></a></li>
+          <li><a href="#img2"><img src="./img/bebidas-ipa.jpg" alt="cerveja" class="imags"></a></li>
+          <li><a href="#img3"><img src="./img/bebidas-pilsen.jpg" alt="cerveja" class="imags"></a></li>
+
+      </ul>
+      
+      <div></div>
+      
+      <div class="galeriaFotos">
+        
+          <div class="box-imag" id="img" >
+              <div class="contaneir">
+                   <a href="" class="btn">&#171;</a>
+                   <a href="" class="btn">&#187;</a>
+                  <img src="./img/bebidas-apa.jpg" class="imags" alt="cerveja">
+              </div>
+         </div>
+
+         <div class="box-imag" id="img2" >
+          <div class="contaneir">
+               <a href="" class="btn">&#171;</a>
+               <a href="" class="btn">&#187;</a>
+              <img src="./img/bebidas-ipa.jpg" class="imags" alt="cereja">
+          </div>
+     </div>
+
+     <div class="box-imag" id="img3" >
+          <div class="contaneir">
+               <a href="" class="btn">&#171;</a>
+               <a href="" class="btn">&#187;</a>
+              <img src="./img/bebidas-pilsen.jpg" class="imags" alt="cerveja">
+          </div>
+     </div>
+     
+      
+        
+      </div>
+</body>
+</html>
+
+
+

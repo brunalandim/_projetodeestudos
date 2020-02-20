@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+/* font-family: 'Poppins', sans-serif; */
+  
+  *{
+        margin: 0;
+        padding: 0;
+    }
+html{
+    font-size: 62.5%;
+    background-color: rgba(165, 42, 42, 0.568);
+    opacity: 1;
+    scroll-behavior: smooth;
+}
+
+    html,body{
+        height: 100%;
+        font: 400 15px/1.8 "Lato", sans-serif; 
+        box-sizing: border-box;
+        overflow-x: hidden;
+     
+    }
+    
+
+ /* fim do conteúdo */
+  /* Navegação */
+ nav{
+    /* background-color: #8a7ae6c2; */
+    height: 20rem;
+    width: 100%;
+   
+ }
+ 
+
+    nav li a{
+    background-color: #f5deb3e8;
+    width: 100%;
+    display: block;
+    height: 2rem;
+    padding: 1rem;
+    margin: auto;
+    transition-duration: .2s;
+    transition-delay: .1s;
+    text-align: center;
+    border: 1px solid rgba(70, 70, 190, 0.575);
+    box-shadow: 0px 0px 2px 1px rgb(107, 29, 107);
+    text-decoration: none;
+    transition-property: background-color, width;
+
+    }
+   
+    .menu_principal {
+        height: 79px;
+        margin: auto;
+        font-size: 1.2rem;
+        padding-top: 20px;
+   
+        /* opacity: 0; */
+        
+    }
+
+    .menu_principal .icon{
+        display: none;
+    }
+
+
+    .menu_principal a:hover{
+        background-color: #f08080;
+        pointer-events: painted;
+        box-sizing: 40% solid black;
+        
+    }
+
+    ul.menu2{
+        display: none;
+        position: relative;
+        left: 50px;
+        text-align: center;
+    }
+    
+  li:hover > .menu2 {
+      display: block;
+      list-style: none;
+      
+    
+  }
+  
+.menu2 li a:hover{
+    line-height: 1.3rem;
+
+}
+    .menu1, .menu2{
+        list-style: none;
+    }
+
+    .menu1{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        flex: 1;
+        margin: auto;
+    }
+
+    *html ul li {float: left; }
+    *html ul li a {height: 1%;}
+
+/* fim da navegação */
+
+    /* conteúdo */
+    .logotipo{
+            background-image: url("../img/fundoavenidabrasil.jpg");
+            min-height: 100%;
+            filter: drop-shadow(5px 5px 20px rgba(70, 70, 190, 0.575));
+            position: relative;
+            background-size: cover;
+            margin: auto;
+        }
+    
+    h1 {
+            padding: 6rem;
+        }
+
+    p{
+        font-size: 1.3rem;
+    }
+
+    /* depoimentos dos gatinhos */
+    
+    #imagens{
+        display: flex;
+        justify-content: space-around;
+    }
+    .fotocat{
+        width: 130px;
+        height: auto;
+        /* border-radius: 50%; */
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding-top: 30px;
+        margin-left: 5px;
+        
+    }
+
+    h2{
+        text-align: center;
+        font-weight: 800;
+        font-size: 3rem;
+        padding-top: 5rem;
+        font-family: 'Poppins', sans-serif;
+        color: white;
+
+    }
+
+    .depo2{
+        display: flex;
+        flex-wrap: wrap ;
+  
+    }
+
+    .caixaTexto{
+        width: 54%;
+        height: auto;
+        /* margin: auto; */
+        filter: drop-shadow(5px 2px 2px black);
+        /* border-radius: 15%; */
+
+    }
+
+    .depocat{
+        display: flex;
+        justify-content: space-between;
+        flex: 1;
+        align-items: center;
+        padding-top: 4rem;
+        left: 0px;
+        position: relative;
+        margin: 2px;
+    }
+
+    .caixatexto p{
+        letter-spacing: 0.2rem; 
+        font-size: 1rem;
+        font-weight: 800;
+
+    }
+
+    /* fim dos depoimentos dos gatinhos */

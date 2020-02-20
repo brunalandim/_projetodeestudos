@@ -1,0 +1,102 @@
+#botaozinhoDaRolagem a{
+    content: "\0040"; /*caractere especial em css*/
+    z-index: 5000; /*manter o botãozinho sempre acima dos outros elementos*/
+    color: white;
+    font-weight: 900;
+    text-align: center;
+    position: fixed;
+    
+    /*cuidado com alocações concorrentes top x bottom e lef x right*/
+    bottom: 82px; /*posição a partir de baixo (não use top neste caso)*/
+    right: 99px; /*posição a partir da direita (não use left neste caso)*/
+    width: 131px;
+    height: auto;
+    border-radius: 50%; /*fará o box ficar circular*/
+    background: rgba(233, 12, 12, 0.719);
+    text-decoration: none;
+    font-size: 1.6em;
+}
+
+#botaozinhoDaRolagem:hover a{
+    background: rgba(17, 14, 2, 0.322);
+    transition: background .2s ; /*abreviação*/
+}
+
+@media only screen and (min-width: 600px) and  (max-width:767px) {
+
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+
+    .banner {
+        min-width: 233vh;
+        height: auto;
+        position: relative;
+        left: 23px;
+    }
+
+    .banner h1 {
+        left: 50vh;
+    }
+
+    .contd{
+        height: auto;
+        min-width: 111vh;
+        z-index: 5000;
+        margin: 483px;
+    
+    }
+
+    }
+    .contac1 {
+        min-width: 241vh;
+        /* position: fixed; */
+        bottom: 0;
+        position: relative;
+        top: 744px;}
+        /* left: 209px; */
+
+        /* galeria de fotos */
+       
+        .numbertext{
+            top: 15px;
+        }
+     
+        
+        /* Fading animation */
+        .fade {
+          -webkit-animation-name: fade;
+          -webkit-animation-duration: 1.5s;
+          animation-name: fade;
+          animation-duration: 1.5s;
+        }
+        
+        @-webkit-keyframes fade {
+          from {opacity: .4}
+          to {opacity: 1}
+        }
+        
+        @keyframes fade {
+          from {opacity: .4}
+          to {opacity: 1}
+
+}
+
+/* fim da galeria de fotos  */
+
+@media only screen and (min-width: 1224px){
+
+    h1{
+        position: absolute;
+        letter-spacing: 0.5em;
+        top: 7vh;
+        left: 58vh;
+    }
+
+ 
+
+
+}

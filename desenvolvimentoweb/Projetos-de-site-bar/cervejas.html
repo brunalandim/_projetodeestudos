@@ -1,0 +1,119 @@
+<!-- 
+  referências: 
+  bootstrap
+  https://getbootstrap.com/
+  
+   wtricks
+  href="http://wtricks.com.br">Wtricks Tutoriais</a> | <a href="https://github.com/wtricks/very-simple-gallery">Fork on GitHub</a> | <a href="https://goo.gl/T3P7az">See original tutorial</a></p> -->
+
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="img/goat-1484988_640.png">
+    <meta name="robots" content="index,follow">
+    <meta name="description" content="Esse site é voltado para oferecer serviços e uma experiência agradável com cervejas artesanais. Temos diferentes produtos que podem servir ao seu gosto">
+    <meta>
+    <meta name="keywords" content="cerveja, restaurante, serviços">
+    <title>Beer or Die</title>
+<link rel="stylesheet" href="bootstrap-4.4.1-dist/bootstrap-4.4.1-dist/css/bootstrap.css" type="text/css"> 
+<link rel="stylesheet" href="css/estilo-padrao.css" type="text/css"> 
+<link rel="stylesheet" href="css/estilo-responsivo.css" type="text/css"> 
+</head>
+<body>
+    <header>
+        <div class="banner">
+            <img id="logo" src="img/goat-1484988_640.png" alt="logo" title="logo">
+            <h1>Beer or Die </h1>
+            <div id="botaozinhoDaRolagem"><a href="#">&#9650;<!--caractere especial que significa "seta"--></a></div>
+        </div>
+                <!-- navegação - menu  -->
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                    <a class="navbar-brand" href="index.html">Home</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                      <ul class="nav nav-pills nav-fill">
+                        <li class="nav-item active">
+                          <a class="nav-link" href="#">Serviços <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="cervejas.html">Cervejas</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="contato.html">Contato</a>
+                          <li class="nav-item">
+                                <a class="nav-link" href="#">Local</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </nav>
+                  <!-- fim do menu -->
+    </header>
+    <section class="container gallery-containe">    
+   
+         <div class="mySlides fade"> <!-- 01 -->
+          <div class="numbertext">01 / 03</div>
+          <img class="imgslide" src="./img/beer-2370783_640.jpg" alt="cervejas"/>
+          <div class="text">Apa</div>
+      </div>
+
+      <div class="mySlides fade"> <!-- 02 -->
+          <div class="numbertext">02 / 03</div>
+          <img class="imgslide" src="./img/bebidas-ipa.jpg" alt="cervejas"/>
+          <div class="text">Ipa</div>
+      </div>
+
+      <div class="mySlides fade"> <!-- 03 -->
+          <div class="numbertext">03 / 03</div>
+          <img class="imgslide" src="./img/bebidas-pilsen.jpg" alt="cervejas"/>
+          <div class="text">Pilsen</div>
+      </div>
+      
+      <!--Final Slides-->
+
+      <!--Navegação-->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+      <script src="./js/galeria-fotos.js"></script>
+ 
+  </section>
+<!-- rodapé -->
+    <footer class="contac1">
+     
+    <!-- endereço -->
+      <div class="contac">
+        <hr class="separador">
+      <span><h3 style="text-align: justify;color: transparent;margin-right: 10px;color: bisque;margin-top:10px ;">Contato</h3></span>  
+      <ul style="text-align: justify;color: bisque;margin-right: 10px;margin-top: 10px;">
+          <li>Rua Bela Vista, 166 - São Paulo - SP</li>
+          <li>Tel: (11)0000-0000</li>
+          <li>beerordie@server.com</li>
+        </ul>
+      </div>
+      <!-- Horarios -->
+        <div class="contac">
+          <span><h3 style="text-align: justify;color: transparent;margin-right: 10px;color: bisque;margin-top:10px ;">Horarios</h3></span>  
+          <ul style="text-align: justify;color: bisque;margin-right: 10px;margin-top: 10px;">
+          <li>Segunda a Quarta: 17h-23h</li>
+          <li>Domingo: 18h - 01h</li>
+          <li>Sábado: 18h- 02h</li>
+          </ul>
+        </div>
+        <!-- reserva -->
+        <div class="contac">
+          <span><h3 style="text-align: justify;color: transparent;margin-right: 10px;color: bisque;margin-top:10px ;">Reserva aqui</h3></span>  
+          <ul style="text-align: justify; color: bisque; margin-right: 10px;margin-top: 10px;"><li><a style="color: bisque;font-weight: 500;background-color: rgba(0, 0, 255, 0.301);" href="contato.html">Clique aqui</a> </li>para fazer a reserva no bar <li> para celebrar os seus eventos, </li> <li> temos um espaço perfeito pra você.</li> <li> Ligue neste número: 00000-5555</li></ul>
+        </div>
+
+    </footer>
+    <!-- fim do rodapé -->
+    
+</body>
+</html>
