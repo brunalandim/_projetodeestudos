@@ -4,42 +4,49 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="robots" content="index,follow">
-    <meta name="description" content="Um portfólio dos principais trabalhos desenvolvidos por mim">
-    <meta name="keywords" content="arduino, tutoriais, design, programação, front-end" >
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css" type="text/css">
-    <title>HOME</title>
+    <link rel="stylesheet" href="simple-lightbox.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Site Bruna Landim | HOME</title>
+
 </head>
-<body>
-   <header id="navbar2" class="nav-bar">
-        <div class="logo-container"><img class="icon" src="./icon-bru.png" alt="logo" title="logo"></div>
-        <nav>
-            <ul class="anav-links">
-                <li ><a class="links" href="#">Sobre</a></li>
-                <li><a  class="links"href="#">Contato</a></li>
-                <li><a class="links" href="#">Projetos</a></li>
-                <li><a class="atom" href="#">
+<body id="home">
+    <nav id="navbar">
+        <div class="container">
+          <div class="logo"><img class="icon" src="./icon-bru.png" alt="icon"></div>
+            <ul class="nav">
+          
+           
+           <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#projetos">Projetos</a></li>
+        </ul>
+        </div>
+    </nav>
+    
+    <!-- momento de colocar os conteúdos -->
 
-                    <img src="./icons8-mapa-mental-50.png"> 
+    <section class="section-a">
+        <div class="container">
+            <div>
+                <h1>ORNITORRINCO</h1>
+                <p>   Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo
+                    repudiandae rerum libero ipsum asperiores omnis mollitia, nostrum
+                    commodi placeat ea itaque modi corrupti corporis nam voluptas aut
+                    reprehenderit eaque culpa.</p>
+                    <a href="#" class="btn">Leia mais</a>
+            </div>
+            <img src="./subway-2288793_1280.jpg" alt="teste">
+        </div>
 
-                </a></li>
-            </ul>
+    </section>
 
-        </nav>
-   </header>
-<!-- aqui é a parte do "sobre mim" -->
-   <section id="sobre" class="identidade">
-<H1>SOBRE MIM</H1>
-    <div class = "boxAbout">
-    <span class="textAbout">
-       <!-- <H1>SOBRE MIM</H1>  -->
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sagittis turpis tristique, suscipit neque eu, mattis nunc. Fusce laoreet sodales nisi, vitae consequat lorem laoreet nec. Fusce venenatis erat id viverra fringilla. Curabitur vel quam hendrerit, finibus metus a, mattis ex. Pellentesque efficitur dolor lacus, ut auctor felis consectetur commodo. Aliquam sed magna eu metus aliquam fringilla vel nec eros. Phasellus sit amet mauris quis sem egestas suscipit. Curabitur vestibulum molestie porttitor. Vivamus tempus mollis quam, in fringilla justo varius sit amet. Nam dictum magna vitae justo fringilla, eu vulputate augue accumsan. Phasellus placerat accumsan ex, vitae molestie orci dapibus a. In ultrices elit orci, quis convallis nisi volutpat a. Interdum et malesuada fames ac ante ipsum primis in faucibus. In suscipit id diam sit amet porta.</p>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="simple-lightbox.jquery.min.js"></script>
+    <script>
+        $(function(){
+            const $gallery = $('.gallery a').simpleLightbox();
+        });
 
-    </span>
-
-   </section>
-
+    </script>
 
 </body>
 </html>
