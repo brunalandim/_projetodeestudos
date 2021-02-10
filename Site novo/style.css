@@ -18,6 +18,7 @@
         background-color: darkgrey;
         background-blend-mode: screen;
         background-size: cover;
+        position: relative;
     }
 
 
