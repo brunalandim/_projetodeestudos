@@ -1,0 +1,86 @@
+
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+    *{
+        margin:0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body{
+        font-size:'Poppins', sans-serif;
+        font-weight: 600;
+        display: flex;
+        flex-direction: column;
+        background-image:url(subway-2288793_1280.jpg) ;
+        background-color: palevioletred;
+        background-blend-mode: screen;
+    }
+
+    .links:hover{
+        background-color: rgb(rgba(75, 57, 175, 0.836), rgb(108, 38, 187), rgb(57, 57, 235));
+    }
+
+    .nav-bar{
+        display: flex;
+        width: 75%;
+        height: 15vh;
+        margin: auto;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: space-between;
+    }
+
+    .logo-container,.anav-links,.atom{
+        display: flex;
+    }
+
+    .logo-container{
+        /* background-color: blueviolet; */
+        flex: 1;
+        font-weight: 400;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .icon{
+        width: 15%;
+    }
+
+    nav{
+        flex: 2;
+    
+    }
+
+    ul.anav-links{
+        /* background-color: blue; */
+        justify-content: space-around;
+        list-style: none;
+        align-content: center;
+        font-size: 19px;
+        align-items: center;
+        text-decoration: none;
+     
+    }
+
+    .links{
+        text-decoration: none;
+        color: black;
+    }
+
+    .atom{
+        flex: 2;
+        /* background-color: chartreuse; */
+        /* justify-content: right; */
+        justify-content: flex-end;
+    }
+
+    .links:hover{
+        background-color: rgb(rgba(75, 57, 175, 0.836), rgb(108, 38, 187), rgb(57, 57, 235));
+        background-color: blue;
+        padding: 24%;
+        font-weight: 800;
+        width: 59%;
+        border-radius: 19%;
+        border: outset;
+    }
