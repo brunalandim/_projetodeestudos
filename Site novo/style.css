@@ -5,21 +5,22 @@
         margin:0;
         padding: 0;
         box-sizing: border-box;
+        scroll-behavior: smooth;
+    
     }
 
     body{
-        font-size:'Poppins', sans-serif;
+        font-family: Arial, Helvetica, sans-serif;
         font-weight: 600;
         display: flex;
         flex-direction: column;
-        background-image:url(subway-2288793_1280.jpg) ;
-        background-color: palevioletred;
+        background-image:url(pedestrians-400811_1920.jpg);
+        background-color: darkgrey;
         background-blend-mode: screen;
+        background-size: cover;
     }
 
-    .links:hover{
-        background-color: rgb(rgba(75, 57, 175, 0.836), rgb(108, 38, 187), rgb(57, 57, 235));
-    }
+
 
     .nav-bar{
         display: flex;
@@ -65,9 +66,14 @@
 
     .links{
         text-decoration: none;
-        color: black;
+        color: #9423b9e0;
+        border-color: coral;
+        font-weight: 900;
+        border-style: solid;
+        padding: 18px;
+        border-radius: 21%;
     }
-
+    
     .atom{
         flex: 2;
         /* background-color: chartreuse; */
@@ -76,12 +82,12 @@
     }
 
     .links:hover{
-        background-color: rgb(rgba(75, 57, 175, 0.836), rgb(108, 38, 187), rgb(57, 57, 235));
+    
         background-color: blue;
         padding: 20%;
         font-weight: 800;
         width: 59%;
         border-radius: 19%;
         border: outset;
-        color: white;
+        color: coral;
     }
