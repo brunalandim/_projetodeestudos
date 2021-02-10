@@ -78,9 +78,10 @@
     .links:hover{
         background-color: rgb(rgba(75, 57, 175, 0.836), rgb(108, 38, 187), rgb(57, 57, 235));
         background-color: blue;
-        padding: 24%;
+        padding: 20%;
         font-weight: 800;
         width: 59%;
         border-radius: 19%;
         border: outset;
+        color: white;
     }
