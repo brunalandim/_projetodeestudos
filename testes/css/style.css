@@ -1,0 +1,152 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+
+*{
+    box-sizing: border-box;
+    margin: 0; 
+    padding: 0;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    font-size: 1.1rem;
+}
+
+h1,h2,h3,h4{
+    line-height: 1.3;
+}
+
+a{
+    color: #444;
+    text-decoration: none;
+    
+}
+
+ul{
+    list-style: none;
+}
+
+.container{
+    /* background-color: red; */
+    max-width: 1100px;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 2rem;
+    margin: 2rem 0;
+}
+
+.container-nav{
+    /* background-color: blue; */
+    /* max-width: 261px; */
+    display: grid;
+    grid-template-columns: 3fr 4fr 1fr 0fr;
+    align-items: center;
+}
+
+img{
+    width:100%
+
+}
+
+.logo{
+    position: relative;
+    left: 12px;
+}
+
+.logo, .icon-buy{
+   
+    width: 62px;
+    align-items: center;
+    align-content: center;
+    margin: 5px 2px 0 0;
+}
+
+.anav-links{
+    display: flex;
+    justify-content: space-around;
+    cursor: pointer;
+
+}
+
+.links:hover{
+    color: rgb(224, 5, 126);
+    font-weight: 800;
+}
+
+/* .container{
+    margin: 2rem 0;
+} */
+
+.container, .container1{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: 3rem;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+
+}
+
+.container h1{
+    font-size: 4rem;
+    color: #575;
+}
+.container p{
+    margin: 1rem 0;
+}
+
+.section-b{
+    position: relative;
+    background: url(../img/banana-614090_1920.jpg) no-repeat bottom center/cover;
+    height: 600px;
+}
+
+/* botão do leia mais  */
+.btn{
+    color: #fff;
+    display: inline-block;
+    background-color: black;
+    border: none;
+    cursor: pointer;
+    font-size: 1.1rem;
+    border-radius: 30px;
+    padding: 0.8rem 1.1rem;
+    align-items: center;
+    margin: auto;
+}
+
+.section-b-inner{
+    color: #fff;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    max-width: 860px;
+    padding: 5rem 0;
+}
+
+.section-b-inner h3{
+    font-size: 2rem;
+}
+
+.section-b-inner h2{
+    font-size: 5rem;
+    margin-top: 1rem;
+}
+
+.section-b-inner p{
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    color: black;
+    font-weight: 800;
+}
+
+.banana{
+    width: 600px;
+    margin: auto;
+}
