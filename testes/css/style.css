@@ -82,7 +82,7 @@ img{
 
 .container, .container1{
         display: grid;
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(1,2fr);
         grid-gap: 3rem;
         align-items: center;
         justify-content: center;
@@ -127,16 +127,20 @@ img{
     justify-content: center;
     align-items: center;
     max-width: 860px;
-    padding: 5rem 0;
+    padding: 5rem 0rem 0rem 15rem;
+    margin-top: 4rem;
 }
 
 .section-b-inner h3{
     font-size: 2rem;
+    color: #575;
+    text-shadow: 5px 2px #540;
 }
 
 .section-b-inner h2{
     font-size: 5rem;
     margin-top: 1rem;
+    text-shadow: 5px 2px #000;
 }
 
 .section-b-inner p{
