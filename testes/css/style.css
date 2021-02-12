@@ -76,19 +76,20 @@ img{
     font-weight: 800;
 }
 
-/* .container{
+.container{
     margin: 2rem 0;
-} */
+}
 
-.container, .container1{
+.container, .container1, .banana, .presentation{
         display: grid;
-        grid-template-columns: repeat(1,2fr);
+        grid-template-columns: 0fr 0fr;
         grid-gap: 3rem;
         align-items: center;
         justify-content: center;
         margin: auto;
 
 }
+
 
 .container h1{
     font-size: 4rem;
@@ -151,6 +152,6 @@ img{
 }
 
 .banana{
-    width: 600px;
+    width: 300px;
     margin: auto;
 }
