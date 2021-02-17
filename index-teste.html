@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudando grid</title>
+</head>
+<style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.default{
+/*o grid precisa ser colocado no div pai e os filhos comportam da maneira que você escolhe, dessa forma que funciona. Mas também pode-se colocar grid nos filhos*/
+
+    background-color: blue;
+    margin: auto;
+    display: grid;
+    width: 400px;
+    height: 400px;
+    grid-template-columns: auto auto auto;
+    grid-gap: 2rem;
+    align-content: center;
+    align-items: center;
+    
+}
+
+.default > div {
+
+    
+    background-color: #4169E1;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.box1,.box2,.box3{
+    /* background-color: black; */
+    width: 70px;
+    height: 20px;
+    padding: 20px;
+    border: 1px solid #fff;
+    color: #fff;
+    /* text-align: center; */
+    margin: auto;
+    /* display: flex;
+    align-items: center;
+    align-content: center; */
+}
+
+</style>
+
+<body>
+<section class="default">
+    <div class="box1"> teste</div>
+
+    <div class="box2"> teste</div>
+
+    <div class="box3">teste</div>
+
+    </section>
+    
+
+</body>
+</html>
