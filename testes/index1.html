@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="imagens/cat-solid.png">
+    <meta name="description" content="é um site voltado para vendas de coisas úteis">
+    <meta name="keywords" content="vendas, produtos, serviços">
+    <link rel="stylesheet" href="./bootstrap-4.4.1-dist/bootstrap-4.4.1-dist/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="./bootstrap-4.4.1-dist/bootstrap-4.4.1-dist/js/bootstrap.min.js"></script>
+    <title>TESTE NOVO</title>
+
+<style>
+    /* .fotos{
+        height: 200px;
+        background-color: #aaa;
+    } */
+/* 
+    img{
+      width:100%;
+    } */
+
+    .jumbotron{
+        background-image: url(./imagens/gatos_sucessus_fundo.jpg);
+        background-size: cover;
+    }
+
+    .text-jumbo{
+        color: #fff;
+    }
+
+    .primeiraFoto{
+        width: 200px;
+        height: 200px;
+    }
+
+    .container-footer{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        color: #fff;
+    }
+
+    .footer-item{
+        color: #fff;
+        text-decoration: none;
+    }
+</style>
+</head>
+<body>
+   
+   <div class="jumbotron text-center" style="margin-bottom: 0;">
+    <h1 class="text-jumbo">Minha primeira página com Bootstrap 4</h1>
+    <p class="text-jumbo">Lorem ipsum dolor sit.</p>
+    </div>
+
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <a href="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
+            </ul>
+        </div>
+    </nav>
+   
+    <div class="container" style="margin-top: 30px;">
+    <div class="row">
+        <div class="col-sm-4">
+            <h2>Sobre mim</h2>
+            <h5>Minhas fotos</h5>
+            <div class="fotos">
+                <img src="./imagens/gatinho4.jpg" alt="gatinho" title="gatinho">
+            </div>
+            <p>Um texto qualquer para enfeitar a página</p>
+            <h3>Alguns links</h3>
+            <p>Lorem ipsum dolor sit ame.</p>
+            <ul class="nav nav-pills flex-column">
+                <li class="nav-item"><a class="nav-link active" href="#">Active</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
+                <li class="nav-item"><a class="nav-link disabled" href="#">Disabled</a></li>
+            </ul>
+            <hr class="d-sm-none">
+        </div>
+    <div class="col-sm-8">
+        <h2>Título</h2>
+        <h5>Descrição qualquer, FEV 12, 2021</h5>
+        <div class="fotos">
+            <img class="primeiraFoto" src="./imagens/amelie.jpg" alt="gatinho" title="gatinho">
+        </div>
+        <p>Texto qualquer</p>
+        <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+        <br>
+        <h2>Textozinho</h2>
+        <h5>Descrição, FEV 11,2021</h5>
+        <div class="fotos">
+            <img src="./imagens/gatinho2.jpg" alt="gatinho" title="gatinho">
+        </div>
+        <p>Qualquer coisa...</p>
+        <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+    </div>
+    
+    </div>
+
+    </div>
+
+    <div class="jumbotron text-center" style="margin-bottom:0">
+    <div class="container-footer">
+        <div class="row">
+            <div class="col-lg">
+                <ul class="navbar-nav text-white">
+                    <li class="nav-item"><a class="nav-link footer-item" href="#">Link</a></li>
+                    <li class="nav-item"><a class="nav-link footer-item" href="#">Link</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-sm">
+            dois
+        </div>
+        <div class="col-sm">
+            <form>
+                <div class="form-group row">
+                    <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">Email</label>
+                <div class="col-sm-10">
+                    <input type= "email" class="form-control form-control-sm" id="colFormLabelSm" placeholder="email">
+                </div>
+                
+                </div>
+            </form>
+        </div>
+    </div>
+    </div>
+    </div>
+</body>
+</html>
