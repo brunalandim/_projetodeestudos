@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code :nth-child</title>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Truculenta&display=swap');
+
+   *{
+       padding: 50px;
+       box-sizing: border-box;
+       margin: 0;
+
+   }
+   
+   table{
+        font-family: 'Truculenta', sans-serif;
+        font-size: 1.2rem ;
+        border-collapse: collapse;
+        width: 150vh;
+        margin: auto;
+    }
+
+    td, th{
+        border: 1px solid #000;
+        text-align: left;
+        padding: 8px;
+    }
+    tr:nth-child(1){
+        background-color: #5874f3;
+        color: aliceblue;
+    }
+
+    td:nth-child(4n+3){
+        background-color: rgba(241, 215, 206, 0.267);
+        color: #000;
+        font-weight: 500;
+    }
+
+    td:nth-child(2){
+        background-color: rgba(241, 215, 206, 0.267);
+        color: #000;
+        font-weight: 500;
+    }
+
+    
+    td:nth-child(4n+1){
+        background-color: rgba(241, 215, 206, 0.267);
+        color: #000;
+        font-weight: 500;
+    }
+
+    tr:nth-child(n+2):hover{
+        cursor: pointer;
+        background-color: #fff580;
+    }
+</style>
+</head>
+<body>
+   <table>
+       <tr>
+           <th>Cachorro</th>
+           <th>nome</th>
+           <th>idade</th>
+       </tr>
+       <tr>
+           <td>Vira Lata</td>
+           <td>Antônio</td>
+           <td>2</td>
+       </tr>
+
+       <tr>
+           <td>Vira Lata</td>
+           <td>Pedro</td>
+           <td>1 mês</td>
+       </tr>
+
+       <tr>
+        <td>Vira Lata</td>
+        <td>Maria</td>
+        <td>1 </td>
+    </tr>
+   </table>
+</body>
+</html>
