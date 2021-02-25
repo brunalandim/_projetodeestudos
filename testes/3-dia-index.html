@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3-dia-css</title>
+<style>
+
+    .frame{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 400px;
+        height: 400px;
+        margin-top: -200px;
+        margin-left: -200px;
+        border-radius: 2px;
+        box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+        overflow: hidden;
+        background-color: #cd853f;
+        color: #333;
+    }
+
+    .center{
+        position: absolute;
+        top: 26%;
+        left: 50%;
+    }
+
+    .eye{
+        position:absolute;
+        width: 150px;
+        height: 150px;
+        background: #d9d9d9;
+        border-radius: 100% 0% 100% 0% / 100% 0% 100% 0%;
+        transform: translate(-50%,50%) rotate(45deg);
+        overflow: hidden;
+    }
+
+    .iris{
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        width: 110px;
+        height: 110px;
+        background: radial-gradient(circle,
+        rgba(40,222,224,1)10%,
+        rgba(45,115,253,1) 100%
+
+        );
+        border-radius: 50%;
+        animation: iris 2s ease-in-out infinite;
+    }
+
+    .pupil{
+        position: absolute;
+        top: 35px;
+        left: 35px;
+        width: 40px;
+        height: 40px;
+        background: radial-gradient(
+            circle,
+            rgba(0,0,0,1) 50%,
+            rgba(40,222,224,1) 90%
+        );
+        border-radius: 50%;
+    }
+
+    .lid-top{
+     
+        width: 342px;
+        height: 556px;
+        border-radius: 221px;
+        box-shadow: 134px 116px 0 0 #cd853f;
+        /* transform: translate(156%, -70%) rotate(
+45deg
+); */
+        animation: lid-top 5s ease-in-out infinite;
+    }
+
+    .lid-bottom{
+      
+       
+        width: 355px;
+        height: 363px;
+        border-radius: 214px;
+        box-shadow: 121px 150px 0 0  #cd853f;
+        transform: translate(-50%, -130%) rotate(225deg);
+        animation: lid-bottom 5s ease-in-out infinite;
+    
+    }
+    @keyframes lid-top{
+        10%,
+        20%,
+        25%,
+        35%,
+        45%,
+        55%,
+        75%,
+        85%{
+            transform: translate(-40%,-60%) rotate(45deg);
+        }
+        15%,
+        30%,
+        50%,
+        80%{
+            transform: translate(-50%,-100%) rotate(45deg);
+        }
+    }
+
+    @keyframes lid-bottom{
+        10%,
+        20%,
+        25%,
+        35%,
+        45%,
+        55%,
+        75%,
+        85%{
+            transform: translate(-50%,-130%) rotate(225deg);
+        }
+        15%,
+        30%,
+        50%,
+        80%{
+            transform: translate(-50%,-95%) rotate(225deg);
+        }
+    }
+
+    @keyframes iris{
+        0%,
+        15%,
+        55%{
+            transform: rotate(-45deg) translateX(0);
+        }
+        20%,
+        30%{
+            transform: rotate(-45deg) translate(25px, 10px) scale(0.9);
+        }
+    }
+</style>
+
+</head>
+<body>
+
+    <div class="frame">
+        <div class="center">
+            <div class="eye">
+                <div class="iris">
+                    <div class="pupil"></div>
+                </div>
+            </div>
+            <div class="lid-top"></div>
+            <div class="lid-bottom"></div>
+        </div>
+    </div>
+    
+</body>
+</html>
