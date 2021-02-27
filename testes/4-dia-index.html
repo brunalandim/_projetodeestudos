@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4 dia</title>
+<style>
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+.frame{
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    height: 400px;
+    width: 400px;
+    margin-top: -200px;
+    margin-left: -200px;
+    border-radius: 2px;
+    box-shadow: 4px 8px 16px 0 rgba(0,0,0.1);
+    overflow: hidden;
+    background-color: #fff;
+    color: #333;
+    font-family: "Open Sans", Helvetica, sans-serif;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+}
+
+span{
+    opacity:0;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 1s ease-in-out;
+    font-weight: bold;
+    }
+
+    .wrapper{
+        display: flex;
+        height: 100vh;
+    }
+
+
+    .rect1{
+        background: #545826;
+        flex-basis:100px;
+    }
+
+    .rect2{
+        background: #452839;
+        flex-basis: 100px;
+    }
+
+    .rect3{
+        background: #9f83d4;
+        flex-basis: 100px;
+    }
+
+    .rect4{
+        background: #548252;
+        flex-basis: 100px;
+    }
+
+    .rect1,
+    .rect2,
+    .rect3,
+    .rect4{
+        transition: flex-basis 1s ease-in-out;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .rect1:hover,
+    .rect2:hover,
+    .rect3:hover,
+    .rect4:hover{
+        flex-basis: 500px;
+        opacity: 1;
+    }
+
+    .rect1:hover span,
+    .rect2:hover span,
+    .rect3:hover span,
+    .rect4:hover span{
+        opacity: 1;
+        color: white;
+        font-size: 30px;
+    }
+</style>
+
+</head>
+<body>
+    <div class="frame">
+        <div class="center">
+            <div class="wrapper">
+                <div class="rect1">
+                <span>Primeiramente</span>
+            </div>
+            <div class="rect2">
+                <span>Batata Frita</span>
+            </div>
+            <div class="rect3">
+                <span>42</span>
+            </div>
+            <div class="rect4">
+                <span>banana</span>
+            </div>
+            </div>
+           
+         
+            
+        </div>
+    </div>
+</body>
+</html> 
