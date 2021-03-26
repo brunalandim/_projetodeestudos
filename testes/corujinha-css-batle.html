@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corujinha</title>
+
+    <style>
+
+.frame{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            height: 400px;
+            width: 400px;
+            margin-top: -200px;
+            margin-left: -200px;
+            background-color: #191919;
+            overflow: hidden;
+        }
+
+    .wrapper{
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        background-color:#191919;
+        z-index: -1;
+    }
+    .eye1{
+        height: 78px;
+        width: 102px;
+        /* background-color: #e08027; */
+        border: solid 4px #e08027;
+        position: absolute;
+        top: 116px;
+        margin-left: 180px;
+        border-radius: 56%;
+        z-index: 4;
+    }
+
+    .eye2{
+        height: 76px;
+        width: 102px;
+        /* background-color: #e08027; */
+        border: solid 4px #e08027;
+        position: absolute;
+        top: 116px;
+        margin-left: 85px;
+        border-radius: 56%;
+        z-index: 4;
+    }
+
+    .mouth{
+        height: 50px;
+        width: 50px;
+        background-color: #e08027;
+        top: 174px;
+        position: absolute;
+        margin-left: 162px;
+        z-index: 1;
+    }
+
+    </style>
+</head>
+<body>
+
+    <div class="frame">
+        <div class="wrapper">
+            <div class="eye1">
+                <div class="pupil1"></div>
+            </div>
+            <div class="eye2">
+                <div class="pupil2"></div>
+            </div>
+            <div class="mouth"></div>
+
+        </div>
+    </div>
+</body>
+</html>
